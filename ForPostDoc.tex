@@ -1,0 +1,365 @@
+% !TeX program = lualatex
+
+\documentclass[10pt,letterpaper,english]{moderncv} 
+\moderncvstyle{banking} 
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.749,0.341,0}% orange
+\definecolor{color2}{rgb}{0., 0.37254902,  0.5254902}% dark grey
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{babel}
+\usepackage{tagging}
+\usepackage{xparse}
+
+
+
+% Tags:
+%\usetag{details}
+\usetag{physics}
+\usetag{cern}
+
+
+\firstname{Henry F.}
+\familyname{Schreiner}
+%\title{CV}
+\address{1114 Camino La Costa Apt. 1020}{78752 Austin, TX}
+
+\phone{512-660-9247} 
+\email{henryschreineriii@utexas.edu}
+\homepage{iscinumpy.blogspot.com}
+\social[linkedin]{henryiii}
+\social[github]{henryiii}
+%\social[twitter]{henryschreiner3}
+
+
+\NewDocumentCommand{\cvaward}{s m m m m m g}{%
+\IfNoValueTF{#7}{%
+\cventry{#2}{\textnormal{#6}}{#4: \textnormal{#3}}{#5}{}{}%
+}{%
+\IfBooleanTF{#1}{%
+\cventry{#2}{\textnormal{#6: \emph{#7}}}{#4: \textnormal{#3}}{#5}{}{}%
+}{%
+\cventry{#2}{\textnormal{#6:}}{#4: \textnormal{#3}}{#5}{}{\emph{#7}}%
+}%
+}}
+
+\begin{document}
+
+\let\oldnullthing\null
+\renewcommand{\null}{}
+\makecvtitle
+\renewcommand{\null}{\oldnullthing}
+\vspace*{-10mm}
+\section{Education}
+\cventry{2010--2016}{Ph.D. in Experimental High Energy Physics}{University of Texas at Austin}{Austin, TX}{} % {GPA 3.8}
+{\textcolor{red}{Defense: March 2016; Graduation: May 2016}} 
+
+\cventry{2006--2009}{B.S. in Theoretical Physics}{Angelo State University}{San Angelo, TX}{GPA: 4.0} %
+{December 2009, Summa Cum Laude, Distinguished Student for the College of Sciences}
+
+\section{Doctoral Thesis}
+\cvitem{Title}{Muon Tracking and Reconstruction}
+\cvitem{Supervisor}{Roy Schwitters}
+\cvitem{Description}{Used comparisons with GEANT4 simulations of targets and data from multiple experiments to
+	show discrepancy in accepted low energy muon spectrum. Detailed a novel measurement of the low energy muon spectrum
+	preformed in Lake Travis, Austin, TX. Explored new imaging techniques to search for new internal features inside a sealed Mayan pyramid in Belize. }
+
+\section{Experience}
+\subsection{Research}
+\cventry{2010-2016}{MayaMuon Research Group}{University of Texas at Austin}{Austin, TX}{}{Installed detectors and a solar system in Belize, tomographic reconstruction and tracking.}
+\tagged{details}{
+\cvlistitem{Rebuilt and improved reconstruction code, 60-100x speedup, with C implementation of projection core with object oriented bindings for Matlab and Python systems and a GUI for on-site analysis in each.}
+\cvlistitem{Built 3D reconstruction algorithm and voxel projections, including GPU versions.}
+\cvlistitem{Built a GEANT4 simulation of the muon detectors, with multithreading and OpenMPI, on the TACC supercomputers.}
+\cvlistitem{Prepared a new computer system and related components for the detectors, moved to ARM architecture, designed new parts and built them in the machine shop.}
+\cvlistitem{Built a full featured threaded GUI in Python for on-site detector operation, compatible with all operating systems, including iOS.}
+\cvlistitem{Automated the operation of the detectors for autonomous remote installations.}
+\cvlistitem{During four trips to Belize, assisted in the construction of a remote autonomous solar power installation and serviced two detectors, including weeks of component troubleshooting.}
+\cvlistitem{Rebuilt the data acquisition system from the ground up in C++11.}
+\cvlistitem{Prepared a new public facing website for the project in less than 24 hours, built several private websites.}
+}
+
+\cventry{2008}{Physics REU}{Northwestern University}{Evanston, IL}{}{Theoretical condensed matter physics on DFT computer simulations of NiTi for predictions of new doped alloys.}
+
+\cventry{2007--2010}
+{Physics, Mathematics, Geology}
+{Angelo State University}
+{San Angelo, TX}
+{}{Wavelet methods and their use in imaging and compression.\\
+Mapped the Dagger Mountain Anticline in Big Bend, TX in ArcGIS.\\
+A study of higher order gravitational effects of a non-spherical object on a probe.}
+
+
+\subsection{Vocational}
+\cventry{2010--2016}{Head Teaching Assistant, Teaching Assistant}{University of Texas at Austin}{Austin, TX}{}{}
+\tagged{details}{
+\cvlistitem{Managed 4-8 TAs responsible for up to 300 students, taught a lab section.}
+\cvlistitem{Rewrote the lab manual with all new figures and several new labs, in \LaTeX.}
+\cvlistitem{Rewrote all the Capstone and Excel lab files.}
+\cvlistitem{Managed ordering replacement supplies for the lab.}
+\cvlistitem{Implemented and taught an optional Excel workshop.}
+\cvlistitem{Designed and machined new balanced mass hangers for harmonic motion lab.}
+\cvlistitem{Automated many of the lab management tasks in Python, \LaTeX, and HTML.}
+\cvlistitem{Rebuilt and managed the public facing website for the lab.}
+\cvlistitem{Filmed prelab videos for all the labs, including computer animated concept sequences.}
+}
+
+
+\cventry{2010}{Special Projects Assistant}{Angelo State University}{San Angelo, TX}{}{}
+%Content Management System and Course Management System upgrades, and tech support.
+
+\subsection{Selected Projects}
+\cventry{2015-}{Release manager, Color library author}{Plumbum: \textnormal{a Python package with 35,000 downloads per month}}{}{}{}
+\cvitem{Blender 3D:}{Built Blender to GEANT4 GDML export add-on, molecule plotter, and 4D function plotter}
+\cvitem{\LaTeX:}{Built a custom class used for multiple University of Texas Ph.D. theses}
+
+\tagged{details}{
+\cvitem{ASU SPS}{Participated in a cross-country SPS road trip to local middle and high schools to raise awareness about physics, wrote and managed a laser light show.}
+\cvitem{Video}{Created a promotional video and animated footage for SPS.}
+\cvitem{Websites}{Wrote a wiki for a retired faculty member, built a site for the Honor society, implemented a CMS as webmaster for SPS.}
+\cvitem{Programming}{Contributed to several open-source projects, including infix, argcomplete and IPython.}
+\cvitem{UT Law School}{Wrote a script for location-based data processing.}
+}
+
+\tagged{physics}{
+	\section{Highlighted Graduate Classes}
+	\cvitem{High Energy}{Quantum Field Theory I \&\ II, Physics of Sensors, Intro to particle physics}
+	\cvitem{Other}{High Performance Scientific Computing with GPUs, Solid State Physics I, Statistical Methods, Methods of Mathematical Physics}
+}
+
+\section{Computer Skills}
+\cvitem{Languages}{C++11, C++, C, Python, Cython, Matlab, \LaTeX, Bash, CUDA, HTML, Lua, PHP}
+\cvitem{Toolsets}{GEANT4, Boost, HDF5, ROOT, OpenMP, MPI, PyQt, Pandas, Tikz}
+\cvitem{Toolchains}{Git, CMake, Sphinx, Doxygen, Nikola}
+\cvitem{Other}{2D, 2.5D, and 3D technical artist}
+\tagged{details}{
+\cvitem{Programs}{Blender, ArcGIS, LyX, Office, Gimp, Inkscape, Autodesk Inventor}
+}
+
+
+
+\tagged{details}{
+\section{Interests}
+
+\cvitem{Hobbies}{Computer modeling and animation, electronics projects, photography and amateur film-making, special effects and compositing, physics simulations, scientific illustrations in 3D, 2D, and 2.5D}
+\cvitem{Projects}{Filmed and animated a short film: \emph{Brothers of the Force}}
+}
+\section{Results}
+\subsection{Awards}
+
+\cvaward{2015}
+{Fall Meeting}
+{American Geophysical Union}
+{San Francisco, CA}
+{Outstanding Student Paper Award}%
+{Measurement Over Large Solid Angle of Low Energy Cosmic Ray Muon Flux}
+
+\cvaward{2010}
+{Academic Excellence Committee}
+{Angelo State University}
+{San Angelo, TX}
+{2010 Distinguished Student Award for College of Sciences}
+
+\cvaward{2009}
+{Pi Mu Epsilon Mathfest}
+{Society of Industrial and Applied Mathematics}
+{Portland, OR}
+{Outstanding Student Exposition and Research in Applied Mathematics}%
+{Edge Effects in the Use of Wavelets for Partial Image Reconstruction}
+
+\cvaward{2009}
+{Alpha Chi National Convention}
+{Alpha Chi}
+{Indianapolis, IN}
+{Certificate of Appreciation}
+
+\cvaward{2009}
+{Annual Meeting}
+{Texas Academy of Sciences}
+{Junction, TX}
+{Amir Moez Award for Best Student Presentation in Mathematics, Abstract award}%
+{Wavelet Matrix Completion Methods and Their Effects In Image Compression\\
+\textnormal{Honorable Mention:}
+The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas}
+
+
+\cvaward{2009}
+{Mathematics Problem of the Month}
+{Angelo State University}
+{San Angelo, TX}
+{Winner}
+
+\cvaward*{2008}
+{Mathematical Contest in Modeling}
+{COMAP}
+{}
+{Honorable Mention}%
+{Sudoku Generator Model}
+
+\cvaward{2008}
+{REU}
+{Northwestern University}
+{Evanston, IL}
+{Certificate of Achievement}
+
+\cvaward{2008}
+{APS -- Texas Section}
+{University of Texas at El Paso}
+{El Paso, TX}
+{Student Presentation Award}
+
+
+\subsection{Other Presentations}
+\cvaward*{2013}
+{High Energy Physics}
+{University of Texas at Austin}
+{Austin, TX}
+{Lunch Seminar}%
+{Computing Environments}
+
+\cvaward*{2012}
+{High Energy Physics}
+{University of Texas at Austin}
+{Austin, TX}
+{Qualifier}%
+{From Images to Quantitative Understanding of Muon Tomography}
+
+\cvaward{2009}
+{Slow Pitch Seminar}
+{Angelo State University}
+{San Angelo, TX}
+{Three Mathematics ``slow pitch'' seminars over wavelets and cryptology}
+
+\cvaward{2009}
+{Alpha Chi Induction}
+{Angelo State University}
+{San Angelo, TX}
+{Invited lecture for Alpha Chi induction ceremony}
+
+\cvaward{2007}
+{Joint Spring Meeting}
+{Texas Sections of APS, AAPT, and SPS}
+{Abilene, TX}
+{\emph{Characterization of near earth objects via orbital perturbations: A numerical study}} %http://meetings.aps.org/link/BAPS.2007.TSS07.SPS2.1
+
+
+\subsection{Co-Authored Presentations}
+
+\cvaward{2008}
+{Joint Meeting}
+{Geological Society of America}
+{Houston, TX}
+{\emph{Dagger Mountain, Big Bend National Park, West Texas Does Not Overlie a Laccolith}}
+
+\cvaward{2009}
+{Joint Meeting}
+{Geological Society of America}
+{Portland, OR}
+{\emph{Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas}}
+
+\subsection{Posters}
+
+
+
+\cvaward{2015, 2013}
+{UT Physics Open House}
+{University of Texas at Austin}
+{Austin, TX}
+{High Energy Physics Poster, 2015 Group Leader}
+
+\cvaward{2009}
+{Student Research Showcase}
+{Angelo State University}
+{San Angelo, Texas}
+{4 posters over 3 different fields}
+
+\cvaward{2008}
+{Quadrennial Congress}
+{Sigma Pi Sigma}
+{Fermilab, IL}
+{Poster}
+
+\subsection{Written Publications}
+\cvitem{Future}{\textcolor{red}{Waiting on data}: Report on Belize Tomography (Science)}
+\cvitem{June 2016}{\textcolor{red}{In preparation}: A Measurement of the Ultra Low Energy Muon Spectrum (Phys. Rev. Letters)}
+\cvitem{May 2016}{\textcolor{red}{Waiting on review}: Muon Tomography and Detector Design (Nuclear Instr. and Methods)}
+\cvitem{2013-2015}{University of Texas's PHY102M lab manual rewrite.}
+\cvitem{2013}{Classified project report}
+\cvitem{2010}{Assisted Angelo State University's modern lab manual rewrite.}
+
+
+\section{Activities and Organizations}
+\cvitem{2008--2009}{President of Pi Mu Epsilon, local chapter, at Angelo State University.}
+\cvitem{2008-2009}{Webmaster, Society of Physics Students, local chapter, at Angelo State University.}
+\cvitem{2009}{Executive Committee member, Society of Physics Students, local chapter, at Angelo State University.}
+
+\subsection{Honor societies}
+Sigma Pi Sigma \textbullet\ Pi Mu Epsilon \textbullet\ Alpha Chi \textbullet\ National Dean's List
+
+
+\subsection{Scholarships and Grants}
+\cvitem{2007-2009}{Carr Academic Scholarship}
+\cvitem{2008-2009}{Carr Research Scholarship}
+\cvitem{2007-2008}{H. R. Dawson Alumni Textbook Scholarship}
+\cvitem{2007}{M. W. Everhart Scholarship}
+\cvitem{2006}{RAO/Pollard Scholarship}
+
+\section{References}
+\begin{cvcolumns}
+
+\cvcolumn{Dr. Roy F. Schwitters}{
+University of Texas at Austin\\
+Department of Physics\\
+1 University Station C1600\\
+Austin, TX 78712\\
+(512) 471-9962\\
+\emaillink{schwitters@physics.utexas.edu}}
+%
+\cvcolumn{Dr. Linda E. Reichl}{
+The University of Texas at Austin\\
+Department of Physics\\
+1 University Station C1600\\
+Austin, TX 78712\\
+(512) 471-7253\\
+\emaillink{reichl@mail.utexas.edu}
+}
+
+\cvcolumn{Dr. Martin L. Barlett}{
+The University of Texas at Austin\\
+ARL -- Signal Physics\\
+PO Box 8029\\
+Austin, TX 78713\\
+(512) 835-3413\\
+\emaillink{barlett@arlut.utexas.edu}}
+
+\end{cvcolumns}
+
+
+  
+\tagged{cern}{
+\begin{cvcolumns}
+\cvcolumn{Dr. Peter Onyisi}{
+The University of Texas at Austin\\
+Department of Physics\\
+1 University Station C1600\\
+Austin, TX 78712\\
+(512) 475-9129\\
+\emaillink{ponyisi@utexas.edu}}
+\end{cvcolumns}
+
+}
+
+
+%\clearpage
+%-----       letter      -----
+% recipient data
+%\recipient{Company Recruitment team}{Company's name\\Street address\\Zip Code City}
+%\date{Date}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure{enclosures}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%\makeletterclosing
+\end{document}
