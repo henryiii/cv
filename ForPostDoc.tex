@@ -8,7 +8,7 @@
 \definecolor{color2}{rgb}{0., 0.37254902,  0.5254902}% dark grey
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=.9in]{geometry}
 \usepackage{babel}
 \usepackage{tagging}
 \usepackage{xparse}
@@ -17,6 +17,7 @@
 
 % Tags:
 %\usetag{details}
+%\usetag{refs}
 \usetag{physics}
 \usetag{cern}
 
@@ -24,10 +25,10 @@
 \firstname{Henry F.}
 \familyname{Schreiner}
 %\title{CV}
-\address{1114 Camino La Costa Apt. 1020}{78752 Austin, TX}
+\address{170 Picketts Charge Apt. 169}{41075 Fort Thomas, KY}
 
 \phone{512-660-9247} 
-\email{henryschreineriii@utexas.edu}
+\email{hschrein@cern.ch}
 \homepage{iscinumpy.blogspot.com}
 \social[linkedin]{henryiii}
 \social[github]{henryiii}
@@ -53,8 +54,8 @@
 \renewcommand{\null}{\oldnullthing}
 \vspace*{-10mm}
 \section{Education}
-\cventry{2010--2016}{Ph.D. in Experimental High Energy Physics}{University of Texas at Austin}{Austin, TX}{} % {GPA 3.8}
-{\textcolor{red}{Defense: March 2016; Graduation: May 2016}} 
+\cventry{2010--2016}{Ph.D. in Experimental High Energy Physics}{University of Texas at Austin}{Austin, TX}{GPA 3.8}
+{May 2016} 
 
 \cventry{2006--2009}{B.S. in Theoretical Physics}{Angelo State University}{San Angelo, TX}{GPA: 4.0} %
 {December 2009, Summa Cum Laude, Distinguished Student for the College of Sciences}
@@ -62,11 +63,16 @@
 \section{Doctoral Thesis}
 \cvitem{Title}{Muon Tracking and Reconstruction}
 \cvitem{Supervisor}{Roy Schwitters}
+\tagged{details}{
 \cvitem{Description}{Used comparisons with GEANT4 simulations of targets and data from multiple experiments to
 	show discrepancy in accepted low energy muon spectrum. Detailed a novel measurement of the low energy muon spectrum
 	preformed in Lake Travis, Austin, TX. Explored new imaging techniques to search for new internal features inside a sealed Mayan pyramid in Belize. }
+}
 
 \section{Experience}
+\subsection{Postdoctoral researcher}
+\cventry{2016-}{Charm Physics Group}{University of Cincinnati}{Cincinnati, OH}{}{Part time at CERN}
+
 \subsection{Research}
 \cventry{2010-2016}{MayaMuon Research Group}{University of Texas at Austin}{Austin, TX}{}{Installed detectors and a solar system in Belize, tomographic reconstruction and tracking.}
 \tagged{details}{
@@ -111,9 +117,13 @@ A study of higher order gravitational effects of a non-spherical object on a pro
 %Content Management System and Course Management System upgrades, and tech support.
 
 \subsection{Selected Projects}
+\cventry{2016-}{Lead maintainer, primary author of GooFit 2.0}{GooFit: \textnormal{A GPU and OpenMP library for fitting data}}{}{}{}
+\cventry{2017}{Library author}{CLI11: \textnormal{A powerful command line parser for C++11}}{}{}{}
 \cventry{2015-}{Release manager, Color library author}{Plumbum: \textnormal{a Python package with 35,000 downloads per month}}{}{}{}
+\tagged{details}{
 \cvitem{Blender 3D:}{Built Blender to GEANT4 GDML export add-on, molecule plotter, and 4D function plotter}
 \cvitem{\LaTeX:}{Built a custom class used for multiple University of Texas Ph.D. theses}
+}
 
 \tagged{details}{
 \cvitem{ASU SPS}{Participated in a cross-country SPS road trip to local middle and high schools to raise awareness about physics, wrote and managed a laser light show.}
@@ -123,16 +133,18 @@ A study of higher order gravitational effects of a non-spherical object on a pro
 \cvitem{UT Law School}{Wrote a script for location-based data processing.}
 }
 
+\tagged{details}{
 \tagged{physics}{
 	\section{Highlighted Graduate Classes}
 	\cvitem{High Energy}{Quantum Field Theory I \&\ II, Physics of Sensors, Intro to particle physics}
 	\cvitem{Other}{High Performance Scientific Computing with GPUs, Solid State Physics I, Statistical Methods, Methods of Mathematical Physics}
 }
+}
 
 \section{Computer Skills}
-\cvitem{Languages}{C++11, C++, C, Python, Cython, Matlab, \LaTeX, Bash, CUDA, HTML, Lua, PHP}
-\cvitem{Toolsets}{GEANT4, Boost, HDF5, ROOT, OpenMP, MPI, PyQt, Pandas, Tikz}
-\cvitem{Toolchains}{Git, CMake, Sphinx, Doxygen, Nikola}
+\cvitem{Languages}{C++11/14/17, C++, C, Python, Cython, Matlab, \LaTeX, Bash, CUDA, HTML, Lua, PHP}
+\cvitem{Toolsets}{GooFit, Hydra, GEANT4, Boost, HDF5, ROOT, OpenMP, MPI, PyQt, Pandas, Tikz, PyBind11}
+\cvitem{Toolchains}{Git, CMake, Sphinx, Doxygen, Nikola, Software Carpentry}
 \cvitem{Other}{2D, 2.5D, and 3D technical artist}
 \tagged{details}{
 \cvitem{Programs}{Blender, ArcGIS, LyX, Office, Gimp, Inkscape, Autodesk Inventor}
@@ -259,9 +271,9 @@ The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Par
 {Portland, OR}
 {\emph{Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas}}
 
+\tagged{details}{
+
 \subsection{Posters}
-
-
 
 \cvaward{2015, 2013}
 {UT Physics Open House}
@@ -280,16 +292,18 @@ The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Par
 {Sigma Pi Sigma}
 {Fermilab, IL}
 {Poster}
+}
 
 \subsection{Written Publications}
-\cvitem{Future}{\textcolor{red}{Waiting on data}: Report on Belize Tomography (Science)}
-\cvitem{June 2016}{\textcolor{red}{In preparation}: A Measurement of the Ultra Low Energy Muon Spectrum (Phys. Rev. Letters)}
-\cvitem{May 2016}{\textcolor{red}{Waiting on review}: Muon Tomography and Detector Design (Nuclear Instr. and Methods)}
+%\cvitem{Future}{\textcolor{red}{Waiting on data}: Report on Belize Tomography (Science)}
+%\cvitem{June 2016}{\textcolor{red}{In preparation}: A Measurement of the Ultra Low Energy Muon Spectrum (Phys. Rev. Letters)}
+%\cvitem{May 2016}{\textcolor{red}{Waiting on review}: Muon Tomography and Detector Design (Nuclear Instr. and Methods)}
+\cvitem{2016}{TODO: Add FastTIMES paper}
 \cvitem{2013-2015}{University of Texas's PHY102M lab manual rewrite.}
 \cvitem{2013}{Classified project report}
 \cvitem{2010}{Assisted Angelo State University's modern lab manual rewrite.}
 
-
+\tagged{detail}{
 \section{Activities and Organizations}
 \cvitem{2008--2009}{President of Pi Mu Epsilon, local chapter, at Angelo State University.}
 \cvitem{2008-2009}{Webmaster, Society of Physics Students, local chapter, at Angelo State University.}
@@ -297,15 +311,18 @@ The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Par
 
 \subsection{Honor societies}
 Sigma Pi Sigma \textbullet\ Pi Mu Epsilon \textbullet\ Alpha Chi \textbullet\ National Dean's List
+}
 
-
+\tagged{detail}{
 \subsection{Scholarships and Grants}
 \cvitem{2007-2009}{Carr Academic Scholarship}
 \cvitem{2008-2009}{Carr Research Scholarship}
 \cvitem{2007-2008}{H. R. Dawson Alumni Textbook Scholarship}
 \cvitem{2007}{M. W. Everhart Scholarship}
 \cvitem{2006}{RAO/Pollard Scholarship}
+}
 
+\tagged{refs}{
 \section{References}
 \begin{cvcolumns}
 
@@ -350,7 +367,7 @@ Austin, TX 78712\\
 \end{cvcolumns}
 
 }
-
+}
 
 %\clearpage
 %-----       letter      -----
