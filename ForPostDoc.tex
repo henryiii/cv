@@ -12,6 +12,7 @@
 \usepackage{babel}
 \usepackage{tagging}
 \usepackage{xparse}
+%\usepackage{tabularx}
 
 
 
@@ -53,11 +54,17 @@
 \makecvtitle
 \renewcommand{\null}{\oldnullthing}
 \vspace*{-10mm}
+
 \section{Education}
+
+%\begin{tabularx}{\textwidth}{p{1in}Xr}
+%	8/2010--5/2016 & Ph.D. in Experimental High Energy Physics &  University of Texas at Austin
+%\end{tabularx}
+
 \cventry{2010--2016}{Ph.D. in Experimental High Energy Physics}{University of Texas at Austin}{Austin, TX} {\textnormal{Supervisor}: Roy Schwitters}
 {May 2016, Thesis: \textit{Muon Tracking and Reconstruction}} 
 
-\cventry{2006--2009}{B.S. in Theoretical Physics}{Angelo State University}{San Angelo, TX}{GPA: 4.0} %
+\cventry{2006--2009}{B.S. in Theoretical Physics}{Angelo State University}{San Angelo, TX}{} %
 {December 2009, Summa Cum Laude, Distinguished Student for the College of Sciences}
 
 \tagged{details}{
@@ -69,22 +76,12 @@
 }
 
 \section{Experience}
-\subsection{Postdoctoral researcher}
-\cventry{2016-}{Charm Physics Group, part time at CERN}{University of Cincinnati}{Cincinnati, OH}{}{GooFit lead developer, LHCb trigger work, DevelopKit training documentation primary author, mentor.}
 
-\subsection{Research}
-\cventry{2010-2016}{MayaMuon Research Group}{University of Texas at Austin}{Austin, TX}{}{Installed detectors and a solar system in Belize, tomographic reconstruction and tracking.}
-\tagged{details}{
-\cvlistitem{Rebuilt and improved reconstruction code, 60-100x speedup, with C implementation of projection core with object oriented bindings for Matlab and Python systems and a GUI for on-site analysis in each.}
-\cvlistitem{Built 3D reconstruction algorithm and voxel projections, including GPU versions.}
-\cvlistitem{Built a GEANT4 simulation of the muon detectors, with multithreading and OpenMPI, on the TACC supercomputers.}
-\cvlistitem{Prepared a new computer system and related components for the detectors, moved to ARM architecture, designed new parts and built them in the machine shop.}
-\cvlistitem{Built a full featured threaded GUI in Python for on-site detector operation, compatible with all operating systems, including iOS.}
-\cvlistitem{Automated the operation of the detectors for autonomous remote installations.}
-\cvlistitem{During four trips to Belize, assisted in the construction of a remote autonomous solar power installation and serviced two detectors, including weeks of component troubleshooting.}
-\cvlistitem{Rebuilt the data acquisition system from the ground up in C++11.}
-\cvlistitem{Prepared a new public facing website for the project in less than 24 hours, built several private websites.}
-}
+\cventry{2016-}{Postdoctorial researcher}{University of Cincinnati}{Cincinnati, OH}{}{GooFit lead developer, LHCb trigger work, DevelopKit training documentation primary author, mentor.}
+\cventry{2010--2016}{MayaMuon Research Group, Head Teaching Assistant, Teaching Assistant}{University of Texas at Austin}{Austin, TX}{}{}
+
+
+\cventry{2010}{Special Projects Assistant}{Angelo State University}{San Angelo, TX}{}{}
 
 \cventry{2008}{Physics REU}{Northwestern University}{Evanston, IL}{}{Theoretical condensed matter physics on DFT computer simulations of NiTi for predictions of new doped alloys.}
 
@@ -97,66 +94,79 @@ Mapped the Dagger Mountain Anticline in Big Bend, TX in ArcGIS.\\
 A study of higher order gravitational effects of a non-spherical object on a probe.}
 
 
-\subsection{Vocational}
-\cventry{2010--2016}{Head Teaching Assistant, Teaching Assistant}{University of Texas at Austin}{Austin, TX}{}{}
-\tagged{details}{
-\cvlistitem{Managed 4-8 TAs responsible for up to 300 students, taught a lab section.}
-\cvlistitem{Rewrote the lab manual with all new figures and several new labs, in \LaTeX.}
-\cvlistitem{Rewrote all the Capstone and Excel lab files.}
-\cvlistitem{Managed ordering replacement supplies for the lab.}
-\cvlistitem{Implemented and taught an optional Excel workshop.}
-\cvlistitem{Designed and machined new balanced mass hangers for harmonic motion lab.}
-\cvlistitem{Automated many of the lab management tasks in Python, \LaTeX, and HTML.}
-\cvlistitem{Rebuilt and managed the public facing website for the lab.}
-\cvlistitem{Filmed prelab videos for all the labs, including computer animated concept sequences.}
-}
 
 
-\cventry{2010}{Special Projects Assistant}{Angelo State University}{San Angelo, TX}{}{}
 %Content Management System and Course Management System upgrades, and tech support.
 
-\subsection{Selected Projects}
-\cventry{2016-}{Lead maintainer, primary author of GooFit 2.0}{GooFit: \textnormal{A GPU and OpenMP library for fitting data}}{}{}{}
-\cventry{2017}{Library author}{CLI11: \textnormal{A powerful command line parser for C++11}}{}{}{}
-\cventry{2015-}{Release manager, Color library author}{Plumbum: \textnormal{a Python package with 35,000 downloads per month}}{}{}{}
-\tagged{details}{
-\cvitem{Blender 3D:}{Built Blender to GEANT4 GDML export add-on, molecule plotter, and 4D function plotter}
-\cvitem{\LaTeX:}{Built a custom class used for multiple University of Texas Ph.D. theses}
-}
 
-\tagged{details}{
-\cvitem{ASU SPS}{Participated in a cross-country SPS road trip to local middle and high schools to raise awareness about physics, wrote and managed a laser light show.}
-\cvitem{Video}{Created a promotional video and animated footage for SPS.}
-\cvitem{Websites}{Wrote a wiki for a retired faculty member, built a site for the Honor society, implemented a CMS as webmaster for SPS.}
-\cvitem{Programming}{Contributed to several open-source projects, including infix, argcomplete and IPython.}
-\cvitem{UT Law School}{Wrote a script for location-based data processing.}
-}
 
-\tagged{details}{
-\tagged{physics}{
-	\section{Highlighted Graduate Classes}
-	\cvitem{High Energy}{Quantum Field Theory I \&\ II, Physics of Sensors, Intro to particle physics}
-	\cvitem{Other}{High Performance Scientific Computing with GPUs, Solid State Physics I, Statistical Methods, Methods of Mathematical Physics}
-}
-}
 
 \section{Computer Skills}
-\cvitem{Languages}{C++11/14/17, C++, C, Python, Cython, Matlab, \LaTeX, Bash, CUDA, HTML, Lua, PHP}
-\cvitem{Toolsets}{GooFit, Hydra, GEANT4, Boost, HDF5, ROOT, OpenMP, MPI, PyQt, Pandas, Tikz, PyBind11}
-\cvitem{Toolchains}{Git, CMake, Sphinx, Doxygen, Nikola, Software Carpentry}
-\cvitem{Other}{2D, 2.5D, and 3D technical artist}
-\tagged{details}{
-\cvitem{Programs}{Blender, ArcGIS, LyX, Office, Gimp, Inkscape, Autodesk Inventor}
+\cvitem{Languages}{Python, Modern C++, C, Cython, Matlab,  CUDA}
+\cvitem{Toolsets}{ROOT, GooFit, Hydra, GEANT4, Boost, HDF5, OpenMP, MPI, PyBind11}
+\cvitem{Toolchains}{Git, CMake, Gitbook, Sphinx, Doxygen, Hugo}
+\cvitem{Other}{2D, 2.5D, and 3D technical artist, work featured by Casio}
+
+
+\subsection{Open Source Contributions}
+
+%\cventry{2016-}{Lead maintainer, primary author of GooFit 2.0 and 2.1}{GooFit: \textnormal{A C++ GPU and OpenMP library for fitting data, with Python bindings.}}{}{}{}
+%cventry{2017-}{Library author}{CLI11: \textnormal{A powerful command line parser for C++11}}{}{}{}
+%\cventry{2015-}{Release manager, Color library author}{Plumbum: \textnormal{a Python package with 35,000 downloads per month}}{}{}{}
+%\cventry{2018-}{Maintainer}{SciKit-HEP: \textnormal{Including DecayLanguage}}{}{}{}
+
+
+Owner or maintainer:
+    \textbf {GooFit} \bullet\ 
+    \textbf {CLI11} \bullet\ 
+    \textbf {Plumbum} \bullet\
+    \textbf {DecayLanguage}
+
+
+Large contributions: \textbf{
+   Minuit2: Standalone \bullet\
+   CMake \bullet\  
+   SciKit-HEP \bullet\  
+   PyBind11 \bullet\ 
+   BeautifulHugo \bullet\  
+   HighFive  \bullet\  
+   Nlohmann's JSON
+}
+
+LHCb contributions: \textbf{
+	Gaudi \bullet\ 
+	LHCb-Docker \bullet\ 
+	StarterKit \bullet\ 
+	LHCb Masterclass
+}
+
+Smaller contributions: \textbf{
+	ROOT \bullet\ 
+	IPython \bullet\ 
+	Jupyter \bullet\ 
+	SciKit-build \bullet\ 
+	Intel’s Parallel STL \bullet\ 
+	Fast histogram \bullet\  
+	VexCL
+}
+
+Bugfix contributions: \textbf{
+	Uproot  \bullet\ 
+	Uproot-methods \bullet\ 
+	Awkward Array \bullet\ 
+	Probfit  \bullet\ 
+	NumPythia \bullet\ 
+	Eigen  \bullet\ 
+    ROOTPy \bullet\ 
+    Numba \bullet\  
+    Google Test  \bullet\ 
+    LMod \bullet\
+    PipEnv \bullet\ 
+    FmtLib
 }
 
 
 
-\tagged{details}{
-\section{Interests}
-
-\cvitem{Hobbies}{Computer modeling and animation, electronics projects, photography and amateur film-making, special effects and compositing, physics simulations, scientific illustrations in 3D, 2D, and 2.5D}
-\cvitem{Projects}{Filmed and animated a short film: \emph{Brothers of the Force}}
-}
 \section{Results}
 \subsection{Awards}
 
