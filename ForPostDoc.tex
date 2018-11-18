@@ -37,17 +37,11 @@
 \social[github]{henryiii}
 %\social[twitter]{henryschreiner3}
 
-
-\NewDocumentCommand{\cvaward}{s m m m m m g}{%
-\IfNoValueTF{#7}{%
-\cventry{#2}{\textnormal{#6}}{#4: \textnormal{#3}}{#5}{}{}%
-}{%
-\IfBooleanTF{#1}{%
-\cventry{#2}{\textnormal{#6: \emph{#7}}}{#4: \textnormal{#3}}{#5}{}{}%
-}{%
-\cventry{#2}{\textnormal{#6:}}{#4: \textnormal{#3}}{#5}{}{\emph{#7}}%
-}%
-}}
+\let\oldersection\section
+\RenewDocumentCommand \section {m}{
+\vspace{-1ex}
+\oldersection{#1}
+}
 
 \begin{document}
 
@@ -60,8 +54,9 @@
 \section{Education}
 
 \begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
-	8/2010--5/2016 & Ph.D. in Experimental High Energy Physics &  University of Texas at Austin\\
-	& Dissertation: \textit{From Images to Quantitative Understanding of Muon Tomography} & \\[.5ex]
+	8/2010--5/2016 & Ph.D. in Experimental High Energy Physics &  University of Texas at Austin \\
+	& \multicolumn{2}{l}{Dissertation: \textit{Methods and Simulations of Muon Tomography and Reconstruction}} \\[1ex]
+%	& \multicolumn{2}{l}{Dissertation: \textit{From Images to Quantitative Understanding of Muon Tomography}} \\[1ex]
 	1/2006--12/2009 & B.S. in Theoretical Physics, \textit{Summa Cum Laude} & Angelo State University \\
 	& \textit{Distinguished Student for the College of Sciences} & \\
 \end{tabularx}
@@ -89,10 +84,12 @@
 
 
 \section{Programming Skills and Experience}
-\cvitem{Languages}{Python, C++, C, Cuda, Cython, Matlab, Lua}
-\cvitem{Toolsets}{ROOT, GooFit, Hydra, GEANT4, Boost, HDF5, OpenMP, MPI, PyBind11}
-\cvitem{Toolchains}{Git, CMake, Gitbook, Sphinx, Doxygen, Hugo}
-\cvitem{Other}{2D, 2.5D, and 3D technical artist, work featured by Casio}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
+Languages & Python \bullet\ C++ \bullet\ C \bullet\ CUDA \bullet\ Cython \bullet\ Matlab \bullet\ Lua \\
+Toolsets & ROOT \bullet\ GooFit \bullet\ Hydra \bullet\ GEANT4 \bullet\ Boost \bullet\ HDF5 \bullet\ OpenMP \bullet\ MPI \bullet\ PyBind11 \\
+Toolchains & Git \bullet\ CMake \bullet\ Gitbook \bullet\ Sphinx \bullet\ Doxygen \bullet\ Hugo \\
+Other & 2D, 2.5D, and 3D technical artist, work featured by Casio \\
+\end{tabularx}
 
 
 \section{Open Source Contributions}
@@ -101,7 +98,7 @@
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}Xr}
 	GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Maintainer \\
-	Plumbum & Wavelet methods and their use in imaging and compression &  Release manager \\
+	Plumbum & Python shell pipelining, CLI, terminal color, and SSH tools &  Release manager \\
 	CLI11 & A powerful command line parser for C++11 & Primary author \\
 	SciKit-HEP & Author of DecayLanguage & Maintainer \\
 \end{tabularx}
@@ -117,14 +114,17 @@
 	Intel Parallel STL & Wrote CMake build system and added HomeBrew formula \\
 \end{tabularx}
 
-\subsection{LHCb contributions:}
+\subsection{LHCb contributions}
+\textbf{%
 	Gaudi \bullet\ 
 	LHCb-Docker \bullet\ 
 	StarterKit \bullet\ 
 	LHCb Masterclass \bullet\ 
 	DevelopKit
+}
 
 \subsection{Smaller contributions and bugfixes}
+\textbf{%
 	Uproot  \bullet\ 
 	Uproot-methods \bullet\ 
 	Awkward Array \bullet\ 
@@ -143,7 +143,7 @@
     LMod \bullet\
     PipEnv \bullet\ 
     FmtLib
-
+}
 
 
 \section{Selected Presentations}
@@ -161,7 +161,7 @@
 	
 	
 	2015 & Measurement Over Large Solid Angle of Low Energy Cosmic Ray Muon Flux &  AGU Fall meeting \\
-	 & \emph{Outstanding Student Paper Award} & \\[1ex]
+	 & (poster) \emph{Outstanding Student Paper Award} & \\[1ex]
 	 2013 & Lunch Seminar: Computing Environments & UT Austin \\[1ex]
 	 2009 & Edge Effects in the Use of Wavelets for Partial Image Reconstruction & Pi Mu Epsilon Mathfest \\
 	 & \emph{Outstanding Student Exposition and Research in Applied Mathematics} & \\[1ex]
@@ -174,7 +174,7 @@
 	  & \multicolumn{2}{l}{The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas}  \\
 	  & \emph{Honorable mention} & \\[1ex]
 	  
-	  2009 & Three Mathematics ``slow pitch'' seminars over wavelets and cryptology & ASU \\
+	  %2009 & Three Mathematics ``slow pitch'' seminars over wavelets and cryptology & ASU \\
 	  
 	  2009 & Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas & GSA \\[1em]
 	  
@@ -210,9 +210,9 @@ for Archaeological and Geophysical Applications & FastTIMES \\
 2010 & Coauthor for Modern Physics lab manual rewrite & Angelo State University\\
 \end{tabularx}
 
-\section{Other writings}
+\section{Other Writings}
 
-\begin{tabularx}{\textwidth}{>{\bfseries}lX}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}X}
 DevelopKit & Developing software in LHCb’s Run 3 \\
 Modern CMake & Using CMake for your own project \\
 GitBook Plugin: Term & A powerful terminal formatting plugin (used in other GitBooks) \\
@@ -221,5 +221,14 @@ UC ROOT Tutorial & Basic ROOT for HEP \\
 GooFit 2Torial & Using GooFit, writing GooFit \\
 \end{tabularx}
 
+\section{Selected Websites}
+
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}X}
+ISciNumPy & My blog over programming \\
+UCHenry & A site for UC and LHCb specific activities \\
+GooFit & Introductory page to GooFit \\
+MayaMuon & Public facing site for the MayaMuon project at UT \\
+UT PHY102M & Webpage for the intro Physics labs \\
+\end{tabularx}
 
 \end{document}
