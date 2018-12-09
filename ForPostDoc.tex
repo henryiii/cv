@@ -8,7 +8,7 @@
 \definecolor{color2}{RGB}{0, 0, 0}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=.9in]{geometry}
+\usepackage[top=.75in,left=.9in,bottom=.75in,right=.9in]{geometry}
 \usepackage{babel}
 \usepackage{tagging}
 \usepackage{xparse}
@@ -37,10 +37,9 @@
 \social[github]{henryiii}
 %\social[twitter]{henryschreiner3}
 
-\let\oldersection\section
-\RenewDocumentCommand \section {m}{
-\vspace{-1ex}
-\oldersection{#1}
+\NewDocumentCommand \mysection {m}{%
+    \vspace{-1ex}
+    \section{#1}
 }
 
 \begin{document}
@@ -51,7 +50,7 @@
 \renewcommand{\null}{\oldnullthing}
 \vspace*{-10mm}
 
-\section{Education}
+\mysection{Education}
 
 \begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
 	8/2010--5/2016 & Ph.D. in Experimental High Energy Physics &  University of Texas at Austin \\
@@ -61,7 +60,7 @@
 	& \textit{Distinguished Student for the College of Sciences} & \\
 \end{tabularx}
 
-\section{Career History}
+\mysection{Career History}
 
 \begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
 	5/2016-- & Postdoctorial researcher &  University of Cincinnati \\
@@ -84,7 +83,7 @@
 
 
 
-\section{Programming Skills and Experience}
+\mysection{Programming Skills and Experience}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
 Languages & Python \bullet\ C++ \bullet\ C \bullet\ CUDA \bullet\ Cython \bullet\ Matlab \bullet\ Lua \\
 Toolsets & ROOT \bullet\ GooFit \bullet\ Hydra \bullet\ GEANT4 \bullet\ Boost \bullet\ HDF5 \bullet\ OpenMP \bullet\ MPI \bullet\ PyBind11 \\
@@ -93,9 +92,9 @@ Other & 2D, 2.5D, and 3D technical artist, work featured by Casio \\
 \end{tabularx}
 
 
-\section{Open Source Contributions}
+\mysection{Open Source Contributions}
 
-\subsection{Owner or Maintainer}
+\subsection{Owner or maintainer}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}Xr}
 	GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Maintainer \\
@@ -147,33 +146,34 @@ Other & 2D, 2.5D, and 3D technical artist, work featured by Casio \\
 }
 
 
-\section{Selected Presentations}
+\mysection{Selected Presentations}
 
 \begin{tabularx}{\textwidth}{p{.35in}Xr}
 	
 	2018 & New approaches to PV reconstruction & LHCb Computing Workshop \\ % Chia, Italy
 	2018 & iMinuit: Interactive Python wrapper around MINUIT2 & ROOT User's Workshop \\  % 
 	2018 & GooFit 2.2 & CHEP \\ % Sofia, Bulgaria
-	2018 & Invited lecture: Bindings in Python & PyHEP  \\[1ex]
-	
-	2017 & GooFit 2.0 & ACAT \\[1ex]
-	2017 & GPUs in LHCb & DPF \\[1ex] % Chicago, IL
-	2017 & GooFit: A case study & PEARC \\[1ex]
+	2018 & Invited lecture: Bindings in Python & PyHEP  \\
+    2018 & Advancements in GooFit & DIANA/HEP \\
+	2017 & CLI11 & DIANA/HEP \\
+	2017 & GooFit 2.0 & ACAT \\
+	2017 & GPUs in LHCb & DPF \\ % Chicago, IL
+	2017 & GooFit: A case study & PEARC \\
 	
 	
 	2015 & Measurement Over Large Solid Angle of Low Energy Cosmic Ray Muon Flux &  AGU Fall meeting \\
-	 & (poster) \emph{Outstanding Student Paper Award} & \\[1ex]
-	 2013 & Lunch Seminar: Computing Environments & UT Austin \\[1ex]
+	 & (poster) \emph{Outstanding Student Paper Award} & \\
+	 2013 & Lunch Seminar: Computing Environments & UT Austin \\
 	 2009 & Edge Effects in the Use of Wavelets for Partial Image Reconstruction & Pi Mu Epsilon Mathfest \\
-	 & \emph{Outstanding Student Exposition and Research in Applied Mathematics} & \\[1ex]
+	 & \emph{Outstanding Student Exposition and Research in Applied Mathematics} & \\
 	 
-	 2009 & Invited lecture for Alpha Chi induction ceremony & Alpha Chi  \\[1ex]
+	 2009 & Invited lecture for Alpha Chi induction ceremony & Alpha Chi  \\
 	 
 	 2009 & Wavelet Matrix Completion Methods and Their Effects In Image Compression &  \\
 	  & \emph{Amir Moez Award for Best Student Presentation in Mathematics} & Texas Academy of Sciences \\
 	  & \emph{Abstract award} & \\
 	  & \multicolumn{2}{l}{The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas}  \\
-	  & \emph{Honorable mention} & \\[1ex]
+	  & \emph{Honorable mention} & \\
 	  
 	  %2009 & Three Mathematics ``slow pitch'' seminars over wavelets and cryptology & ASU \\
 	  
@@ -181,8 +181,8 @@ Other & 2D, 2.5D, and 3D technical artist, work featured by Casio \\
 	  
 	  2008 & Dagger Mountain, Big Bend National Park, West Texas Does Not Overlie a Laccolith & GSA \\[1em]
 	 
-	 2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS -- Texas Section \\
-	 & \emph{Student Presentation Award} & \\[1ex]
+	 2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS--Texas Section \\
+	 & \emph{Student Presentation Award} & \\
 	 
 	 2007 & Characterization of near earth objects via orbital perturbations: A numerical study & APS \\
 	 %http://meetings.aps.org/link/BAPS.2007.TSS07.SPS2.1
@@ -199,7 +199,7 @@ Other & 2D, 2.5D, and 3D technical artist, work featured by Casio \\
 %{2008}{Quadrennial Congress}{Sigma Pi Sigma}{Fermilab, IL}{Poster}
 
 
-\section{Selected Publications}
+\mysection{Selected Publications}
 
 \begin{tabularx}{\textwidth}{p{.8in}Xr}
 
@@ -210,8 +210,10 @@ for Archaeological and Geophysical Applications & FastTIMES \\
 2013 & Classified project report & University of Texas\\
 2010 & Coauthor for Modern Physics lab manual rewrite & Angelo State University\\
 \end{tabularx}
+\href{http://inspirehep.net/search?ln=en&p=find+jy+2017+or+jy+2018+and+author+schreiner+and+author+sokoloff&of=hb&action_search=Search&sf=earliestdate&so=d}
+{And 81 papers as part of the LHCb collaboration}
 
-\section{Other Writings}
+\mysection{Other Writings}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}X}
 DevelopKit & Developing software in LHCb’s Run 3 \\
@@ -223,7 +225,7 @@ GooFit 2Torial & Using GooFit, writing GooFit \\
 PHY102m videos & Video series for the 102m labs at UT \\
 \end{tabularx}
 
-\section{Selected Websites}
+\mysection{Selected Websites}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}Xr}
 ISciNumPy & My blog over programming & \url{iscinumpy.gitlab.io} \\
