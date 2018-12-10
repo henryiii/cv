@@ -1,0 +1,128 @@
+% !TeX program = lualatex
+
+\documentclass[10pt,letterpaper,english]{moderncv} 
+\moderncvstyle{banking} 
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{RGB}{224, 1, 34}
+\definecolor{color2}{RGB}{0, 0, 0}
+
+\usepackage[utf8]{inputenc}
+\usepackage[top=.7in,left=.9in,bottom=.7in,right=.9in]{geometry}
+\usepackage{babel}
+\usepackage{xparse}
+\usepackage{tabularx} % exapandable columns
+\usepackage{array} % Bold a column
+
+
+\firstname{Henry F.}
+\familyname{Schreiner}
+%\title{CV}
+%\address{261 rue du Puits Mathieu}{Thoiry 01710 France}
+\address{Department of Physics\enskip\textbullet\enskip University of Cincinnati}{PO Box 210011\enskip\textbullet\enskip Cincinnati, OH 45221-0011}
+
+\phone{512-609-0314}
+\email{hschrein@cern.ch}
+\homepage{iscinumpy.gitlab.io}
+%\homepage{homepages.uc.edu/\textasciitilde schreihf/uchenry}
+\social[linkedin]{henryiii}
+\social[github]{henryiii}
+%\social[twitter]{henryschreiner3}
+
+\NewDocumentCommand \mysection {m}{%
+    \vspace{-1ex}
+    \section{#1}
+}
+
+\begin{document}
+
+\let\oldnullthing\null
+\renewcommand{\null}{}
+\makecvtitle
+\renewcommand{\null}{\oldnullthing}
+\vspace*{-10mm}
+
+\mysection{Selected Publications}
+
+\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+	
+	2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ % 
+	2017 & GooFit 2.0 & ACAT 2017 \\ % http://inspirehep.net/record/1632171
+	2016 & Development of Muon Imaging Technology
+	for Archaeological and Geophysical Applications & FastTIMES \\
+	2013--2015 & PHY102M lab manual rewrite & University of Texas \\
+	2013 & Classified project report & University of Texas\\
+	2010 & Coauthor for Modern Physics lab manual rewrite & Angelo State University\\
+\end{tabularx}
+\href{http://inspirehep.net/search?ln=en&p=find+jy+2017+or+jy+2018+and+author+schreiner+and+author+sokoloff&of=hb&action_search=Search&sf=earliestdate&so=d}
+{And 81 papers as part of the LHCb collaboration}
+
+\mysection{Selected Presentations}
+
+\begin{tabularx}{\textwidth}{p{.35in}X>{\bfseries}r}
+	
+	2018 & New approaches to PV reconstruction & LHCb Computing Workshop \\ % Chia, Italy
+	2018 & iMinuit: Interactive Python wrapper around MINUIT2 & ROOT User's Workshop \\  % 
+	2018 & GooFit 2.2 & CHEP \\ % Sofia, Bulgaria
+	2018 & Invited lecture: Bindings in Python & PyHEP  \\
+    2018 & Advancements in GooFit & DIANA/HEP \\
+	2017 & CLI11 & DIANA/HEP \\
+	2017 & GooFit 2.0 & ACAT \\
+	2017 & GPUs in LHCb & DPF \\ % Chicago, IL
+	2017 & GooFit: A case study & PEARC \\
+	
+	
+	2015 & Measurement Over Large Solid Angle of Low Energy Cosmic Ray Muon Flux &  AGU Fall meeting \\
+	 & (poster) \emph{Outstanding Student Paper Award} & \\
+	 2013 & Lunch Seminar: Computing Environments & UT Austin \\
+	 2009 & Edge Effects in the Use of Wavelets for Partial Image Reconstruction & Pi Mu Epsilon Mathfest \\
+	 & \emph{Outstanding Student Exposition and Research in Applied Mathematics} & \\
+	 
+	 2009 & Invited lecture for Alpha Chi induction ceremony & Alpha Chi  \\
+	 
+	 2009 & Wavelet Matrix Completion Methods and Their Effects In Image Compression &  \\
+	  & \emph{Amir Moez Award for Best Student Presentation in Mathematics} & Texas Academy of Sciences \\
+	  & \emph{Abstract award} & \\
+	  & \multicolumn{2}{l}{The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas}  \\
+	  & \emph{Honorable mention} & \\
+	  
+	  %2009 & Three Mathematics ``slow pitch'' seminars over wavelets and cryptology & ASU \\
+	  
+	  2009 & Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas & GSA \\[1em]
+	  
+	  2008 & Dagger Mountain, Big Bend National Park, West Texas Does Not Overlie a Laccolith & GSA \\[1em]
+	 
+	 2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS--Texas Section \\
+	 & \emph{Student Presentation Award} & \\
+	 
+	 2007 & Characterization of near earth objects via orbital perturbations: A numerical study & APS \\
+	 %http://meetings.aps.org/link/BAPS.2007.TSS07.SPS2.1
+	 
+\end{tabularx}
+
+
+%{2009}{Mathematics Problem of the Month}{Angelo State University}{San Angelo, TX}{Winner}
+%{2008}{Mathematical Contest in Modeling}{COMAP}{}{Honorable Mention}{Sudoku Generator Model}
+%{2008}{REU}{Northwestern University}{Evanston, IL}{Certificate of Achievement}
+
+%{2015, 2013}{UT Physics Open House}{University of Texas at Austin}{Austin, TX}{High Energy Physics Poster, 2015 Group Leader}
+%{2009}{Student Research Showcase}{Angelo State University}{San Angelo, Texas}{4 posters over 3 different fields}
+%{2008}{Quadrennial Congress}{Sigma Pi Sigma}{Fermilab, IL}{Poster}
+
+
+
+
+\mysection{Other Writings}
+
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}X}
+DevelopKit & Developing software in LHCb’s Run 3 \\
+Modern CMake & Using CMake for your own project \\
+CLI11 Tutorial & Command line parsing made beautiful \\
+GitBook Plugin: Term & A powerful terminal formatting plugin and example (used in other GitBooks) \\
+UC ROOT Tutorial & Basic ROOT for HEP \\
+GooFit 2torial & Using GooFit, writing GooFit \\
+PHY102m videos & Video series for the 102m labs at UT \\
+\end{tabularx}
+
+
+\end{document}
