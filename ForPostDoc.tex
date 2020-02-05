@@ -27,15 +27,13 @@
 \familyname{Schreiner}
 %\title{CV}
 %\address{261 rue du Puits Mathieu}{Thoiry 01710 France}
-\address{Department of Physics\enskip\textbullet\enskip University of Cincinnati}{PO Box 210011\enskip\textbullet\enskip Cincinnati, OH 45221-0011}
-
-\phone{512-609-0314}
+\address{Princeton Research Computing\enskip\textbullet\enskip Princeton University}{347 Lewis Science Library\enskip\textbullet\enskip Princeton, New Jersey 08544}
+\phone{609-258-8141}
 \email{hschrein@cern.ch}
 \homepage{iscinumpy.gitlab.io}
-%\homepage{homepages.uc.edu/\textasciitilde schreihf/uchenry}
 \social[linkedin]{henryiii}
 \social[github]{henryiii}
-%\social[twitter]{henryschreiner3}
+\social[twitter]{henryschreiner3}
 
 \NewDocumentCommand \mysection {m}{%
     \vspace{-1ex}
@@ -55,7 +53,6 @@
 \begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
 	8/2010--5/2016 & Ph.D. in Experimental High Energy Physics &  University of Texas at Austin \\
 	& \multicolumn{2}{l}{Dissertation: \textit{Methods and Simulations of Muon Tomography and Reconstruction}} \\[1ex]
-%	& \multicolumn{2}{l}{Dissertation: \textit{From Images to Quantitative Understanding of Muon Tomography}} \\[1ex]
 	1/2006--12/2009 & B.S. in Theoretical Physics, \textit{Summa Cum Laude} & Angelo State University \\
 	& \textit{Distinguished Student for the College of Sciences} & \\
 \end{tabularx}
@@ -63,7 +60,8 @@
 \mysection{Career History}
 
 \begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
-	5/2016-- & Postdoctoral Fellow &  University of Cincinnati \\
+    3/2019-- & Computational Physicist/Research Software Engineer & Princeton University \\
+	5/2016--2/2019 & Postdoctoral Fellow &  University of Cincinnati \\
 	9/2018 & Consultant & University of Texas at Austin \\
 	8/2018--12/2018 & Adjunct Instructor &  University of Cincinnati \\
 	1/2011--5/2016 & Research Assistant & University of Texas at Austin \\
@@ -85,9 +83,9 @@
 
 \mysection{Programming Skills and Experience}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
-Languages & Python \bullet\ C++ \bullet\ C \bullet\ CUDA \bullet\ Cython \bullet\ Matlab \bullet\ Lua \bullet\ JavaScript \\
-Toolsets & ROOT \bullet\ GooFit \bullet\ Hydra \bullet\ Geant4 \bullet\ Boost \bullet\ HDF5 \bullet\ OpenMP \bullet\ MPI \bullet\ PyBind11 \bullet\ PyTorch \bullet\ TensorFlow\\
-Toolchains & Git \bullet\ CMake \bullet\ Gitbook \bullet\ Sphinx \bullet\ Doxygen \bullet\ Hugo \bullet\ Nikola\\
+Languages & Python \bullet\ C++ \bullet\ C \bullet\ CUDA \bullet\ Cython \bullet\ Matlab \bullet\ Lua \bullet\ JavaScript \bullet TensorFlow \\
+Toolsets & ROOT \bullet\ Scikit-HEP \bullet\ Geant4 \bullet\ Boost \bullet\ HDF5 \bullet\ OpenMP \bullet\ MPI \bullet\ PyBind11 \bullet\ PyTorch \\
+Toolchains & Git \bullet\ CMake \bullet\ Gitbook \bullet\ Sphinx \bullet\ Doxygen \bullet\ Hugo \bullet\ Jekyll \bullet\ Conda-Forge \\
 Other & 2D and 3D technical artist, work featured by Casio \\
 \end{tabularx}
 
@@ -97,18 +95,22 @@ Other & 2D and 3D technical artist, work featured by Casio \\
 \subsection{Owner or maintainer}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}Xr}
+    Scikit-HEP & A collection of packages for High Energy Physics & Admin \\
+    boost-histogram & Scikit-HEP package for histograms & Primary author \\
+	Particle & Scikit-HEP package presenting a particle database & An author \\
+	DecayLanguage & Scikit-HEP package describing decay chains & An author \\
     GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Maintainer \\
 	Plumbum & Python shell pipelining, CLI, terminal color, and SSH tools &  Release manager \\
-	CLI11 & A powerful command line parser for C++11 & Primary author \\
-	SciKit-HEP & Author of DecayLanguage & Maintainer \\
+	CLI11 & A powerful command line parser for C++11 used by the Microsoft Terminal & Primary author \\
+	Conda-Forge ROOT & Provides the ROOT toolkit on Conda & Secondary author \\
 \end{tabularx}
 
 \subsection{Large contributions}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}X}
+	IRIS-HEP website    & Publications system, service integration, homepage design, and more \\
 	Minuit2        & Built standalone and several patches, added Windows support \\
 	CMake          &  OpenMP support for macOS, Several CUDA inprovements  \\
 	PyBind11       &  Several new features and better CUDA support      \\
-	BeautifulHugo  &   Lots of new website features    \\
 	HighFive       &    New concise syntax, bugfixes, std::array support  \\
 	Nlohmann::JSON & Wrote version 3.3, adding GCC 4.8 support (previously considered impossible) \\
 	Intel Parallel STL & Wrote CMake build system and added HomeBrew formula \\
@@ -149,7 +151,18 @@ Other & 2D and 3D technical artist, work featured by Casio \\
 \mysection{Selected Presentations}
 
 \begin{tabularx}{\textwidth}{p{.35in}X>{\bfseries}r}
-	
+    2020 & Python, Numpy, and Pandas & Princeton RDM 2020\\ 	
+    2019 & High performance Python: GPUs & PRC Minicourses \\ 	
+    2019 & High performance Python: CPUs & PRC Minicourses \\ 	
+    2019 & Recent developments in histogram libraries  & CHEP 2019 \\ 	
+    2019 & Python 3.8: What's new & PyHEP 2019 \\ 	
+    2019 & Python Histogramming packages & PyHEP 2019\\ 	
+    2019 & Modern CMake Workshop & USATLAS Bootcamp \\ 	
+    2019 & A hybrid deep learning approach to vertexing & 3rd IML Workshop \\ 	
+    2019 & A hybrid deep learning approach to vertexing & CtD/WIT 2019 \\ 	
+    2019 & Conda: a complete reproducible ROOT environment in under 5 minutes & HOW 2019 \\ 	
+    2019 & Machine Learning for the Primary Vertex reconstruction & HOW 2019 \\ 	
+    2019 & A hybrid deep learning approach to vertexing & ACAT 2019 \\ %  Saas Fee, Switzerland
 	2018 & New approaches to PV reconstruction & LHCb Computing Workshop \\ % Chia, Italy
 	2018 & iMinuit: Interactive Python wrapper around MINUIT2 & ROOT User's Workshop \\  % 
 	2018 & GooFit 2.2 & CHEP \\ % Sofia, Bulgaria
@@ -203,8 +216,12 @@ Other & 2D and 3D technical artist, work featured by Casio \\
 
 \begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
 
+
+2019 & A hybrid deep learning approach to vertexing &  ACAT 2019 \\ 
+2018 & A Python upgrade to the GooFit package for parallel fitting & CHEP 2018 \\
 2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ % 
 2017 & GooFit 2.0 & ACAT 2017 \\ % http://inspirehep.net/record/1632171
+2017 & Modernizing GooFit: A Case Study & PEARC17 \\ 
 2016 & Development of Muon Imaging Technology
 for Archaeological and Geophysical Applications & FastTIMES \\
 2013--2015 & PHY102M lab manual rewrite & University of Texas \\
@@ -217,6 +234,8 @@ for Archaeological and Geophysical Applications & FastTIMES \\
 \mysection{Other Writings}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}X}
+CMake workshop & Designed for the USATLAS/FIRST-HEP computing bootcamp \\
+CompClass & A full semester over Computational Science in Python \\
 DevelopKit & Developing software in LHCb’s Run 3 \\
 Modern CMake & Using CMake for your own project \\
 CLI11 Tutorial & Command line parsing made beautiful \\
@@ -230,8 +249,9 @@ PHY102m videos & Video series for the 102m labs at UT \\
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}Xr}
 ISciNumPy & My blog over programming & \url{iscinumpy.gitlab.io} \\
-UCHenry & A site for UC and LHCb specific activities& \url{homepages.uc.edu/~schreihf/uchenry}  \\
-GooFit & Introductory page to GooFit & \url{goofit.github.io} \\
+IRIS-HEP & Home of the IRIS-HEP project & \url{iris-hep.org} \\
+Scikit-HEP & Home of the Scikit-HEP project & \url{scikit-hep.org} \\
+UCHenry & A old site for UC and LHCb specific activities & \url{cern.ch/hschrein}  \\
 MayaMuon & Public facing site for the MayaMuon project & \url{www.hep.utexas.edu/mayamuon} \\
 UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy102m}  \\
 \end{tabularx}
