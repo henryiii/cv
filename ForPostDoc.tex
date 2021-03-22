@@ -86,17 +86,21 @@
 Languages & Python \bullet\ C++ \bullet\ C \bullet\ CUDA \bullet\ Cython \bullet\ Matlab \bullet\ Lua \bullet\ JavaScript \bullet TensorFlow \\
 Toolsets & ROOT \bullet\ Scikit-HEP \bullet\ Geant4 \bullet\ Boost \bullet\ HDF5 \bullet\ OpenMP \bullet\ MPI \bullet\ PyBind11 \bullet\ PyTorch \\
 Toolchains & Git \bullet\ CMake \bullet\ Gitbook \bullet\ Sphinx \bullet\ Doxygen \bullet\ Hugo \bullet\ Jekyll \bullet\ Conda-Forge \\
-Other & 2D and 3D technical artist, work featured by Casio \\
+Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio \\
 \end{tabularx}
 
 
 \mysection{Open Source Contributions}
 
-\subsection{Owner or maintainer}
+\subsection{Selected projects, owner or maintainer}
 
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}Xr}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}Xr}
+    pypa/build & The build tool for Python packages & Maintainer \\
+    cibuildwheel & Builds binary wheels on CI systems & Maintainer \\
+    pybind11 & The popular C++11 Python bindings & Maintainer \\
     Scikit-HEP & A collection of packages for High Energy Physics & Admin \\
-    boost-histogram & Scikit-HEP package for histograms & Primary author \\
+    boost-histogram & Fast and comprehensive histograms & Primary author \\
+    hist, uhi & Scikit-HEP packages for advanced histograms & Primary author \\
 	Particle & Scikit-HEP package presenting a particle database & An author \\
 	DecayLanguage & Scikit-HEP package describing decay chains & An author \\
     GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Maintainer \\
@@ -106,11 +110,12 @@ Other & 2D and 3D technical artist, work featured by Casio \\
 \end{tabularx}
 
 \subsection{Large contributions}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}X}
-	IRIS-HEP website    & Publications system, service integration, homepage design, and more \\
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.4in}X}
+	IRIS-HEP website & Publications system, service integration, homepage design, and more \\
+	Clariphy         & From IRIS-HEP \\
+	Science-Responds & From IRIS-HEP \\
 	Minuit2        & Built standalone and several patches, added Windows support \\
 	CMake          &  OpenMP support for macOS, Several CUDA inprovements  \\
-	PyBind11       &  Several new features and better CUDA support      \\
 	HighFive       &    New concise syntax, bugfixes, std::array support  \\
 	Nlohmann::JSON & Wrote version 3.3, adding GCC 4.8 support (previously considered impossible) \\
 	Intel Parallel STL & Wrote CMake build system and added HomeBrew formula \\
@@ -147,13 +152,45 @@ Other & 2D and 3D technical artist, work featured by Casio \\
     FmtLib
 }
 
+\mysection{Selected Publications}
+
+\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+2021 & Progress in developing a hybrid deep learning algorithm for identifying and locating primary vertices & vCHEP 2021 \\
+2020 & Boost-histogram: High-Performance Histograms as Objects & SciPy 2020 \\
+2020 & An updated hybrid deep learning algorithm for identifying and locating primary vertices & CtD 2020 \\
+2020 & Inexpensive multi-patient respiratory monitoring system for helmet ventilation during COVID-19 pandemic & \href{https://doi.org/10.1101/2020.06.29.20141283}{medRxiv} \\
+2020 & Recent developments in histogram libraries & CHEP 2019 \\
+2020 & The Scikit HEP Project -- overview and prospects & CHEP 2019 \\
+2019 & A hybrid deep learning approach to vertexing &  ACAT 2019 \\ 
+2019 & A comprehensive real-time analysis model at the LHCb experiment & JINST 14 \\
+2019 & A Python upgrade to the GooFit package for parallel fitting & CHEP 2018 \\
+2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ % 
+2018 & GooFit 2.0 & ACAT 2017 \\ % http://inspirehep.net/record/1632171
+2017 & Modernizing GooFit: A Case Study & PEARC17 \\ 
+2016 & Development of Muon Imaging Technology
+for Archaeological and Geophysical Applications & FastTIMES \\
+2013--2015 & PHY102M lab manual rewrite & University of Texas \\
+2013 & Classified project report & University of Texas\\
+2010 & Coauthor for Modern Physics lab manual rewrite & Angelo State University\\
+\end{tabularx}
+
 
 \mysection{Selected Presentations}
 
 \begin{tabularx}{\textwidth}{p{.35in}X>{\bfseries}r}
-    2020 & Python, Numpy, and Pandas & Princeton RDM 2020\\ 	
-    2019 & High performance Python: GPUs & PRC Minicourses \\ 	
-    2019 & High performance Python: CPUs & PRC Minicourses \\ 	
+    2021 & CMake: Best Practices & S\&C Round Table \\
+    2021 & Level Up Your Python & PRC Bootcamp \\
+    2020 & High-performance Python: CPUs & PRC Training \\
+    2020 & Mixing Python and Compiled Code & PRC Training \\
+    2020 & Building a Python library & Princeton RSE group \\
+    2020 & High-performance Python: CPUs & PRC Training Series \\
+    2020 & The boost-histogram package & PyHEP 2020 \\
+    2020 & Boost-histogram: High-Performance Histograms as Objects & SciPy 2020 \\
+    2020 & Boost-Histogram for Analysis Systems (poster) & IRIS-HEP Poster Session \\
+    2020 & International efforts on efficient computing & ECHEP \\
+    2020 & Python, Numpy, and Pandas & Princeton RDM 2020 \\
+    2019 & High performance Python: GPUs & PRC Minicourses \\
+    2019 & High performance Python: CPUs & PRC Minicourses \\
     2019 & Recent developments in histogram libraries  & CHEP 2019 \\ 	
     2019 & Python 3.8: What's new & PyHEP 2019 \\ 	
     2019 & Python Histogramming packages & PyHEP 2019\\ 	
@@ -197,7 +234,7 @@ Other & 2D and 3D technical artist, work featured by Casio \\
 	 2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS--Texas Section \\
 	 & \emph{Student Presentation Award} & \\
 	 
-	 2007 & Characterization of near earth objects via orbital perturbations: A numerical study & APS \\
+	 2007 & Characterization of near earth objects via orbital perturbations: A numerical study & APS
 	 %http://meetings.aps.org/link/BAPS.2007.TSS07.SPS2.1
 	 
 \end{tabularx}
@@ -212,28 +249,10 @@ Other & 2D and 3D technical artist, work featured by Casio \\
 %{2008}{Quadrennial Congress}{Sigma Pi Sigma}{Fermilab, IL}{Poster}
 
 
-\mysection{Selected Publications}
-
-\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
-
-
-2019 & A hybrid deep learning approach to vertexing &  ACAT 2019 \\ 
-2018 & A Python upgrade to the GooFit package for parallel fitting & CHEP 2018 \\
-2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ % 
-2017 & GooFit 2.0 & ACAT 2017 \\ % http://inspirehep.net/record/1632171
-2017 & Modernizing GooFit: A Case Study & PEARC17 \\ 
-2016 & Development of Muon Imaging Technology
-for Archaeological and Geophysical Applications & FastTIMES \\
-2013--2015 & PHY102M lab manual rewrite & University of Texas \\
-2013 & Classified project report & University of Texas\\
-2010 & Coauthor for Modern Physics lab manual rewrite & Angelo State University\\
-\end{tabularx}
-\href{http://inspirehep.net/search?ln=en&p=find+jy+2017+or+jy+2018+and+author+schreiner+and+author+sokoloff&of=hb&action_search=Search&sf=earliestdate&so=d}
-{And 81 papers as part of the LHCb collaboration}
-
 \mysection{Other Writings}
 
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}X}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.6in}X}
+Level Up Your Python & Designed for PRC tutorial \\
 CMake workshop & Designed for the USATLAS/FIRST-HEP computing bootcamp \\
 CompClass & A full semester over Computational Science in Python \\
 DevelopKit & Developing software in LHCb’s Run 3 \\
@@ -248,6 +267,8 @@ PHY102m videos & Video series for the 102m labs at UT \\
 \mysection{Selected Websites}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}Xr}
+clariphy & Community Laboratory for AI Research at the Intersection with Physics & \url{clariphy.org} \\
+science-responds & The Larger Scientific Community Responds to the COVID-19 Pandemic & \url{science-responds.org} \\
 ISciNumPy & My blog over programming & \url{iscinumpy.gitlab.io} \\
 IRIS-HEP & Home of the IRIS-HEP project & \url{iris-hep.org} \\
 Scikit-HEP & Home of the Scikit-HEP project & \url{scikit-hep.org} \\
