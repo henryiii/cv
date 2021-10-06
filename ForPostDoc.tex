@@ -1,19 +1,21 @@
 % !TeX program = lualatex
 
-\documentclass[10pt,letterpaper,english]{moderncv} 
-\moderncvstyle{banking} 
+\documentclass[10pt,letterpaper]{moderncv} 
+\moderncvstyle{banking}
 
 \definecolor{color0}{rgb}{0,0,0}% black
 \definecolor{color1}{RGB}{224, 1, 34}
 \definecolor{color2}{RGB}{0, 0, 0}
 
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[top=.7in,left=.9in,bottom=.7in,right=.9in]{geometry}
+\usepackage[top=.7in,left=.85in,bottom=.7in,right=.85in]{geometry}
 \usepackage{babel}
 \usepackage{tagging}
 \usepackage{xparse}
-\usepackage{tabularx} % exapandable columns
+\usepackage{tabularx} % Expandable columns
 \usepackage{array} % Bold a column
+
 
 
 % Tags:
@@ -83,10 +85,7 @@
 
 \mysection{Programming Skills and Experience}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
-Languages & Python \bullet\ C++ \bullet\ Ruby \bullet\ C \bullet\ CUDA \bullet\ Cython \bullet\ Matlab \bullet\ Lua \bullet\ JavaScript \\
-Toolsets & ROOT \bullet\ Scikit-HEP \bullet\ Geant4 \bullet\ Boost \bullet\ HDF5 \bullet\ OpenMP \bullet\ MPI \bullet\ pybind11 \bullet\ PyTorch \\
-Toolchains & Git \bullet\ CMake \bullet\ Gitbook \bullet\ Sphinx \bullet\ Doxygen \bullet\ Hugo \bullet\ Jekyll \bullet\ Conda-Forge \bullet\ Homebrew \\
-Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio \\
+Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet\ CUDA \textbullet\ Matlab \textbullet\ Lua \textbullet\ JavaScript
 \end{tabularx}
 
 
@@ -96,20 +95,24 @@ Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio 
 \subsection{Selected projects, owner or maintainer}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}Xr}
-    pypa/build & The build tool for Python packages & Maintainer \\
-    cibuildwheel & Builds binary wheels on CI systems & Maintainer \\
-    pybind11 & The popular C++11 Python bindings & Maintainer \\
+    pypa/build & The build tool for Python packages & Co-maintainer \\
+    cibuildwheel & Builds binary wheels on CI systems & Co-maintainer \\
+    pybind11 & The popular C++11 Python bindings & Co-maintainer \\
+    Scikit-build & KitWare's CMake adaptor for Python & Admin \\
+    CMake & KitWare's Python packaging for CMake & Co-maintainer \\
+    Ninja & KitWare's Python packaging for Ninja & Co-maintainer \\
     Scikit-HEP & A collection of packages for High Energy Physics & Admin \\
     Cookie & A template for new Scikit-HEP Python projects & Primary author \\
     boost-histogram & Fast and comprehensive histograms & Primary author \\
     hist, uhi & Scikit-HEP packages for advanced histograms & Primary author \\
 	Particle & Scikit-HEP package presenting a particle database & An author \\
 	DecayLanguage & Scikit-HEP package describing decay chains & An author \\
-    GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Maintainer \\
-	Plumbum & Python shell pipelining, CLI, terminal color, and SSH tools &  Release manager \\
+    GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Co-maintainer \\
+	Plumbum & Python shell pipelining, CLI, terminal color, and SSH tools &  Maintainer \\
 	CLI11 & A powerful command line parser for C++11 used by the Microsoft Terminal & Primary author \\
-	Conda-Forge ROOT & Provides the ROOT toolkit on Conda & Secondary author \\
-	Conda-Forge Numba & Provides Numba on Conda & Co-maintainer \\
+	ROOT & High energy physics C++ toolkit & conda-forge and homebrew \\
+	Numba & Provides Numba on Conda & conda-forge maintainer \\
+	trampolim & Modern pure Python package system & Co-maintainer \\
     jekyll-indico & Ruby plugin for Jekyll to collect Indico talks & Primary author \\
 \end{tabularx}
 
@@ -118,9 +121,10 @@ Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio 
 	IRIS-HEP website & Publications system, service integration, homepage design, and more \\
 	Clariphy         & From IRIS-HEP \\
 	Science-Responds & From IRIS-HEP \\
-	cibuildwheel   & Requires-Python support and much more \\
-	pybind11       & New 60+ job CI system and build system \\
+	cibuildwheel   & PyProject.toml, Requires-Python, and much more \\
+	pybind11       & New 60+ job CI system and build system, packaging, much more \\
     build          & Quite a few fixes for uncommon issues \\
+    manylinux & Assisted with CI automation and user experience improvements \\
 	Minuit2        & Built standalone and several patches, added Windows support \\
 	CMake          & OpenMP support for macOS, an occasional CUDA maintainer  \\
 	HighFive       & New concise syntax, bugfixes, std::array support  \\
@@ -130,58 +134,66 @@ Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio 
 
 \subsection{LHCb contributions}
 \textbf{%
-	Gaudi \bullet\ 
-	LHCb-Docker \bullet\ 
-	StarterKit \bullet\ 
-	LHCb Masterclass \bullet\ 
+	Gaudi \textbullet\ 
+	LHCb-Docker \textbullet\ 
+	StarterKit \textbullet\ 
+	LHCb Masterclass \textbullet\ 
 	DevelopKit
 }
 
 \subsection{Smaller contributions and bugfixes}
 \textbf{%
-	Awkward Array \bullet\ 
-	Eigen  \bullet\ 
-	Fast histogram \bullet\  
-	IPython \bullet\ 
-	Jupyter \bullet\ 
-	NumPythia \bullet\ 
-	Probfit  \bullet\ 
-	ROOT \bullet\ 
-	SciKit-build \bullet\ 
-	Uproot  \bullet\ 
-	Uproot-methods \bullet\ 
-	VexCL \bullet\ 
-    FmtLib \bullet\ 
-    Google Test  \bullet\ 
-    LMod \bullet\
-    Numba \bullet\  
-    PipEnv \bullet\ 
-    Probfit \bullet\ 
-    Python \bullet\ 
-    ROOTPy \bullet\ 
-    Setuptools-scm \bullet\ 
-    manylinux \bullet\ 
-    mplhep \bullet\ 
-    packaging \bullet\ 
-    pip \bullet\ 
-    poetry \bullet\ 
-    pyjet
+	Awkward Array \textbullet\ 
+	Eigen  \textbullet\ 
+	Fast histogram \textbullet\  
+	IPython \textbullet\ 
+	Jupyter \textbullet\ 
+	NumPythia \textbullet\ 
+	Probfit  \textbullet\ 
+	ROOT \textbullet\ 
+	SciKit-build \textbullet\ 
+	Uproot  \textbullet\ 
+	Uproot-methods \textbullet\ 
+	VexCL \textbullet\ 
+    FmtLib \textbullet\ 
+    Google Test  \textbullet\ 
+    LMod \textbullet\
+    Numba \textbullet\  
+    PipEnv \textbullet\ 
+    Probfit \textbullet\ 
+    Python \textbullet\ 
+    ROOTPy \textbullet\ 
+    Setuptools-scm \textbullet\ 
+    manylinux \textbullet\ 
+    mplhep \textbullet\ 
+    packaging \textbullet\ 
+    pip \textbullet\ 
+    poetry \textbullet\ 
+    pyjet \textbullet\
+    nox
 }
 
 \mysection{Selected Accomplishments}
 
-\textbf{2021:} Awarded Google Open Source Peer Bonus Award \bullet\ Joined the PyPA \bullet\ Rewrote portions of packaging.python.org. \bullet\ Released boost-histogram 1.x series, UHI, and hist 2.2 \bullet\ Joined the ROOT project.
+\textbf{2021:} Awarded Google Open Source Peer Bonus Award \textbullet\ Joined the PyPA \textbullet\ Rewrote portions of packaging.python.org. \textbullet\ Released boost-histogram 1.x series, UHI, and hist 2.2-2.5 \textbullet\ Joined the ROOT project. \textbullet\ Joined the Scikit-build project as an admin \textbullet\ Built new config mode for cibuildwheel 2.0 \textbullet\ Mentored three fellowship students.
 
-\textbf{2020:} Developed software for COVID-19 flow monitor \bullet\ Joined and released pybind11 2.6.x series \bullet\ Joined cibuildwheel \bullet\ Released cookie and major updates to Developer docs \bullet\ Proposed PlottableHistogram Protocol and started UHI \bullet\ Released jekyll-indico for Ruby \bullet\ CMake tutorial accepted into HSF \bullet\ GitHub Actions conversions and Scikit-HEP developer docs \bullet\ Successful Google Summer of Code mentor.
+\textbf{2020:} Developed software for COVID-19 flow monitor \textbullet\ Joined and released pybind11 2.6.x series \textbullet\ Joined cibuildwheel \textbullet\ Released cookie and major updates to Developer docs \textbullet\ Proposed PlottableHistogram Protocol and started UHI \textbullet\ Released jekyll-indico for Ruby \textbullet\ CMake tutorial accepted into HSF \textbullet\ GitHub Actions conversions and Scikit-HEP developer docs \textbullet\ Successful Google Summer of Code mentor.
 
-\textbf{2019:} Co-created Conda-forge: ROOT \bullet\ Joined Princeton \bullet\ Proposed and started boost-histogram \bullet\ Redesigned Scikit-hep.org, started the developer pages \bullet\ took over IRIS-HEP.org development \bullet\ Fixed multiple Scikit-HEP legacy packages \bullet\ Created CMake workshop.
+\textbf{2019:} Co-created Conda-forge: ROOT \textbullet\ Joined Princeton \textbullet\ Proposed and started boost-histogram \textbullet\ Redesigned Scikit-hep.org, started the developer pages \textbullet\ took over IRIS-HEP.org development \textbullet\ Fixed multiple Scikit-HEP legacy packages \textbullet\ Created CMake workshop.
 
-\textbf{2018:} New standalone Minuit2 for ROOT \bullet\ New GooFit releases \bullet\ Joined Scikit-HEP \bullet\ Taught graduate course on computational physics \bullet\ Co-developed pv-finder algorithm.
+\textbf{2018:} New standalone Minuit2 for ROOT \textbullet\ New GooFit releases \textbullet\ Joined Scikit-HEP \textbullet\ Taught graduate course on computational physics \textbullet\ Co-developed pv-finder algorithm.
 
 \mysection{Selected Publications - peer reviewed}
 
 \begin{minipage}[t]{.065\textwidth}
-\textbf{2020:}\\
+\textbf{2021:}
+\end{minipage}%
+\begin{minipage}[t]{.935\textwidth}
+\textbf{vCHEP 2021} \emph{Progress in developing a hybrid deep learning algorithm for identifying and locating primary vertices} EPJ Web Conf. 251 (2021) 04012
+\end{minipage}
+
+\begin{minipage}[t]{.065\textwidth}
+\textbf{2020:}
 \end{minipage}%
 \begin{minipage}[t]{.935\textwidth}
 \textbf{SciPy 2020} \emph{Boost-histogram: High-Performance Histograms as Objects} Proceedings of the 19th Python in Science Conference, 63-69 \\
@@ -191,7 +203,7 @@ Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio 
 \end{minipage}
 
 \begin{minipage}[t]{.065\textwidth}
-\textbf{2019:}\\
+\textbf{2019:}
 \end{minipage}%
 \begin{minipage}[t]{.935\textwidth}
 \textbf{ACAT 2019} \emph{A hybrid deep learning approach to vertexing} J. Phys.: Conf. Ser. 1525 012079 \\ 
@@ -200,14 +212,14 @@ Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio 
 \end{minipage}
 
 \begin{minipage}[t]{.065\textwidth}
-\textbf{2018:}\\
+\textbf{2018:}
 \end{minipage}%
 \begin{minipage}[t]{.935\textwidth}
 \textbf{ACAT 2018} \emph{GooFit 2.0} ACAT 2017 J. Phys.: Conf. Ser. 1085 042014
 \end{minipage}
 
 \begin{minipage}[t]{.065\textwidth}
-\textbf{2017:}\\
+\textbf{2017:}
 \end{minipage}%
 \begin{minipage}[t]{.935\textwidth}
 \textbf{PEARC17} \emph{Modernizing GooFit: A Case Study} In Proceedings of the Practice and Experience in Advanced Research Computing 2017 on Sustainability, Success and Impact
@@ -216,6 +228,7 @@ Other & PyPA member \bullet\ 2D and 3D technical artist, work featured by Casio 
 \mysection{Selected Publications - other}
 
 \begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+2021 & Software Training in HEP & vCHEP 2021 \\ 
 2020 & Inexpensive multi-patient respiratory monitoring system for helmet ventilation during COVID-19 pandemic & \href{https://doi.org/10.1101/2020.06.29.20141283}{medRxiv} \\
 2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ % 
 2016 & Development of Muon Imaging Technology
@@ -262,7 +275,11 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 
 \mysection{Selected Presentations}
 
-\begin{tabularx}{\textwidth}{p{.35in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+	2021 & Powerful Python Packaging for Scientific Codes & PyHEP 2021 \\
+	2021 & High-Performance Histogramming for HEP Analysis & PyHEP 2021 \\
+	2021 & Level Up Your Python & PyHEP 2021 \\
+	2021 & Pybind11 & SciPy 2021 \\
     2021 & CMake: Best Practices & S\&C Round Table \\
     2021 & Level Up Your Python & PRC Bootcamp \\
     2020 & High-performance Python: CPUs & PRC Training \\
@@ -305,16 +322,17 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 	 2009 & Invited lecture for Alpha Chi induction ceremony & Alpha Chi  \\
 	 
 	 2009 & Wavelet Matrix Completion Methods and Their Effects In Image Compression &  \\
-	  & \emph{Amir Moez Award for Best Student Presentation in Mathematics} & Texas Academy of Sciences \\
+	  & \emph{Amir Moez Award for Best Student Presentation in Mathematics} & Texas AoS \\
 	  & \emph{Abstract award} & \\
-	  & \multicolumn{2}{l}{The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas}  \\
+	  
+	  2009 & The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas &  Texas AoS \\
 	  & \emph{Honorable mention} & \\
 	  
 	  %2009 & Three Mathematics ``slow pitch'' seminars over wavelets and cryptology & ASU \\
 	  
-	  2009 & Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas & GSA \\[1em]
+	  2009 & Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas & GSA \\
 	  
-	  2008 & Dagger Mountain, Big Bend National Park, West Texas Does Not Overlie a Laccolith & GSA \\[1em]
+	  2008 & Dagger Mountain, Big Bend National Park, West Texas Does Not Overlie a Laccolith & GSA \\
 	 
 	 2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS--Texas Section \\
 	 & \emph{Student Presentation Award} & \\
