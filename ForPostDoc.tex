@@ -1,10 +1,10 @@
 % !TeX program = lualatex
 
-\documentclass[10pt,letterpaper]{moderncv} 
+\documentclass[10pt,letterpaper]{moderncv}
 \moderncvstyle{banking}
 
 \definecolor{color0}{rgb}{0,0,0}% black
-\definecolor{color1}{RGB}{224, 1, 34}
+\definecolor{color1}{RGB}{0, 0, 0} % was { 224, 1, 34}
 \definecolor{color2}{RGB}{0, 0, 0}
 
 \usepackage[T1]{fontenc}
@@ -73,6 +73,7 @@
 	6/2008--9/2008 & Research Experience for Undergraduates & Northwestern University \\
 \end{tabularx}
 
+\begin{comment}
 \subsection{Other research projects}
 
 \begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
@@ -80,6 +81,7 @@
 	2007--2009 & Mapped the Dagger Mountain Anticline in Big Bend, TX & Angelo State University \\
 	2007 & Characterization of near earth objects via orbital perturbations & Angelo State University \\
 \end{tabularx}
+\end{comment}
 
 
 
@@ -105,83 +107,118 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
     Cookie & A template for new Scikit-HEP Python projects & Primary author \\
     boost-histogram & Fast and comprehensive histograms & Primary author \\
     hist, uhi & Scikit-HEP packages for advanced histograms & Primary author \\
+    uproot-browser & ROOT file graphical browser in the terminal & Primary author \\
 	Particle & Scikit-HEP package presenting a particle database & An author \\
 	DecayLanguage & Scikit-HEP package describing decay chains & An author \\
-    GooFit & A C++ GPU and OpenMP library for fitting data, with Python bindings. & Co-maintainer \\
+    GooFit & A C++ GPU \& OpenMP library for fitting data, with Python bindings & Co-maintainer \\
 	Plumbum & Python shell pipelining, CLI, terminal color, and SSH tools &  Maintainer \\
-	CLI11 & A powerful command line parser for C++11 used by the Microsoft Terminal & Primary author \\
+	CLI11 & A command line parser for C++11 used by the Microsoft Terminal & Primary author \\
 	ROOT & High energy physics C++ toolkit & conda-forge and homebrew \\
 	Numba & Provides Numba on Conda & conda-forge maintainer \\
 	trampolim & Modern pure Python package system & Co-maintainer \\
     jekyll-indico & Ruby plugin for Jekyll to collect Indico talks & Primary author \\
+    hypernewsviewer & Replacement for CMS HyperNews & Primary author \\
+
 \end{tabularx}
 
 \subsection{Large contributions}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.4in}X}
-	IRIS-HEP website & Publications system, service integration, homepage design, and more \\
-	Clariphy         & From IRIS-HEP \\
-	Science-Responds & From IRIS-HEP \\
-	cibuildwheel   & PyProject.toml, Requires-Python, and much more \\
-	pybind11       & New 60+ job CI system and build system, packaging, much more \\
-    build          & Quite a few fixes for uncommon issues \\
-    manylinux & Assisted with CI automation and user experience improvements \\
-	Minuit2        & Built standalone and several patches, added Windows support \\
 	CMake          & OpenMP support for macOS, an occasional CUDA maintainer  \\
+	Cibuildwheel   & PyProject.toml, Requires-Python, and much more \\
+	Clariphy         & From IRIS-HEP \\
 	HighFive       & New concise syntax, bugfixes, std::array support  \\
-	Nlohmann::JSON & Wrote version 3.3, adding GCC 4.8 support (previously considered impossible) \\
+	IRIS-HEP website & Publications system, service integration, homepage design, and more \\
 	Intel Parallel STL & Wrote CMake build system and added HomeBrew formula \\
+	Minuit2        & Built standalone and several patches, added Windows support \\
+	Nlohmann::JSON & Wrote version 3.3, adding GCC 4.8 support (previously considered impossible) \\
+	Pybind11       & New 60+ job CI system and build system, packaging, much more \\
+	Science-Responds & From IRIS-HEP \\
+    Build          & Quite a few fixes for uncommon issues \\
+    Manylinux & Assisted with CI automation and user experience improvements \\
+    Nox            & Several new features, and better Conda support \\
+    Pyodide        & Multiple checks and fixes, updated most packages, added boost-histogram \\
 \end{tabularx}
 
 \subsection{LHCb contributions}
 \textbf{%
-	Gaudi \textbullet\ 
-	LHCb-Docker \textbullet\ 
-	StarterKit \textbullet\ 
-	LHCb Masterclass \textbullet\ 
+	Gaudi \textbullet\
+	LHCb-Docker \textbullet\
+	StarterKit \textbullet\
+	LHCb Masterclass \textbullet\
 	DevelopKit
 }
 
 \subsection{Smaller contributions and bugfixes}
 \textbf{%
-	Awkward Array \textbullet\ 
-	Eigen  \textbullet\ 
-	Fast histogram \textbullet\  
-	IPython \textbullet\ 
-	Jupyter \textbullet\ 
-	NumPythia \textbullet\ 
-	Probfit  \textbullet\ 
-	ROOT \textbullet\ 
-	SciKit-build \textbullet\ 
-	Uproot  \textbullet\ 
-	Uproot-methods \textbullet\ 
-	VexCL \textbullet\ 
-    FmtLib \textbullet\ 
-    Google Test  \textbullet\ 
+	Awkward Array \textbullet\
+	Eigen  \textbullet\
+	Fast histogram \textbullet\
+	IPython \textbullet\
+	Jupyter \textbullet\
+	NumPythia \textbullet\
+	Probfit  \textbullet\
+	ROOT \textbullet\
+	SciKit-build \textbullet\
+	Uproot  \textbullet\
+	Uproot-methods \textbullet\
+	VexCL \textbullet\
+    FmtLib \textbullet\
+    Google Test  \textbullet\
     LMod \textbullet\
-    Numba \textbullet\  
-    PipEnv \textbullet\ 
-    Probfit \textbullet\ 
-    Python \textbullet\ 
-    ROOTPy \textbullet\ 
-    Setuptools-scm \textbullet\ 
-    manylinux \textbullet\ 
-    mplhep \textbullet\ 
-    packaging \textbullet\ 
-    pip \textbullet\ 
-    poetry \textbullet\ 
-    pyjet \textbullet\
-    nox
+    MPLHEP \textbullet\
+    ManyLinux \textbullet\
+    Numba \textbullet\
+    Packaging \textbullet\
+    Pip \textbullet\
+    PipEnv \textbullet\
+    Poetry \textbullet\
+    Probfit \textbullet\
+    PyJet \textbullet\
+    Python \textbullet\
+    ROOTPy \textbullet\
+    Rich \textbullet\
+    Setuptools-scm \textbullet\
+    Typeshed
 }
 
 \mysection{Selected Accomplishments}
 
-\textbf{2021:} Awarded Google Open Source Peer Bonus Award \textbullet\ Joined the PyPA \textbullet\ Rewrote portions of packaging.python.org. \textbullet\ Released boost-histogram 1.x series, UHI, and hist 2.2-2.5 \textbullet\ Joined the ROOT project. \textbullet\ Joined the Scikit-build project as an admin \textbullet\ Built new config mode for cibuildwheel 2.0 \textbullet\ Mentored three fellowship students.
+\textbf{2022:} Talk accepted at PyCon US 2022 \textbullet\
+Released uproot-browser \textbullet\
+Compiled boost-histogram in WebAssembly, in the next pyodide release \textbullet\
+Taught Level Up Your Python during Wintersession.
 
-\textbf{2020:} Developed software for COVID-19 flow monitor \textbullet\ Joined and released pybind11 2.6.x series \textbullet\ Joined cibuildwheel \textbullet\ Released cookie and major updates to Developer docs \textbullet\ Proposed PlottableHistogram Protocol and started UHI \textbullet\ Released jekyll-indico for Ruby \textbullet\ CMake tutorial accepted into HSF \textbullet\ GitHub Actions conversions and Scikit-HEP developer docs \textbullet\ Successful Google Summer of Code mentor.
+\textbf{2021:} Featured on the TalkPython Podcast \#339 \textbullet\
+Awarded Google Open Source Peer Bonus Award \textbullet\
+Joined the PyPA \textbullet\ Rewrote portions of packaging.python.org. \textbullet\
+Released boost-histogram 1.x series, UHI, and hist 2.2-2.5 \textbullet\
+Joined the ROOT project. \textbullet\
+Joined the Scikit-build project as an admin \textbullet\
+Built new config mode for cibuildwheel 2.0 \textbullet\
+Mentored three fellowship students.
 
-\textbf{2019:} Co-created Conda-forge: ROOT \textbullet\ Joined Princeton \textbullet\ Proposed and started boost-histogram \textbullet\ Redesigned Scikit-hep.org, started the developer pages \textbullet\ took over IRIS-HEP.org development \textbullet\ Fixed multiple Scikit-HEP legacy packages \textbullet\ Created CMake workshop.
+\textbf{2020:} Developed software for COVID-19 flow monitor \textbullet\
+Joined and released pybind11 2.6.x series \textbullet\
+Joined cibuildwheel \textbullet\
+Released cookie and major updates to Developer docs \textbullet\
+Proposed PlottableHistogram Protocol and started UHI \textbullet\
+Released jekyll-indico for Ruby \textbullet\
+CMake tutorial accepted into HSF \textbullet\
+GitHub Actions conversions and Scikit-HEP developer docs \textbullet\
+Successful Google Summer of Code mentor.
 
-\textbf{2018:} New standalone Minuit2 for ROOT \textbullet\ New GooFit releases \textbullet\ Joined Scikit-HEP \textbullet\ Taught graduate course on computational physics \textbullet\ Co-developed pv-finder algorithm.
+\textbf{2019:} Co-created Conda-forge: ROOT \textbullet\
+Joined Princeton \textbullet\
+Proposed and started boost-histogram \textbullet\
+Redesigned Scikit-hep.org, started the developer pages \textbullet\
+Took over IRIS-HEP.org development \textbullet\
+Fixed multiple Scikit-HEP legacy packages \textbullet\ Created CMake workshop.
+
+\textbf{2018:} New standalone Minuit2 for ROOT \textbullet\
+New GooFit releases \textbullet\
+Joined Scikit-HEP \textbullet\
+Taught graduate course on computational physics \textbullet\
+Co-developed pv-finder algorithm.
 
 \mysection{Selected Publications - peer reviewed}
 
@@ -207,7 +244,7 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
 \textbf{2019:}
 \end{minipage}%
 \begin{minipage}[t]{.935\textwidth}
-\textbf{ACAT 2019} \emph{A hybrid deep learning approach to vertexing} J. Phys.: Conf. Ser. 1525 012079 \\ 
+\textbf{ACAT 2019} \emph{A hybrid deep learning approach to vertexing} J. Phys.: Conf. Ser. 1525 012079 \\
 \textbf{Article}   \emph{A comprehensive real-time analysis model at the LHCb experiment} JINST 14, no.04, P04006 \\
 \textbf{CHEP 2018} \emph{A Python upgrade to the GooFit package for parallel fitting} EPJ Web Conf., 214 (2019) 05006
 \end{minipage}
@@ -229,9 +266,9 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
 \mysection{Selected Publications - other}
 
 \begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
-2021 & Software Training in HEP & vCHEP 2021 \\ 
+2021 & Software Training in HEP & vCHEP 2021 \\
 2020 & Inexpensive multi-patient respiratory monitoring system for helmet ventilation during COVID-19 pandemic & \href{https://doi.org/10.1101/2020.06.29.20141283}{medRxiv} \\
-2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ % 
+2017 & SI2: SSE: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System  \textit{(accepted)} & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ %
 2016 & Development of Muon Imaging Technology
 for Archaeological and Geophysical Applications & FastTIMES \\
 %
@@ -277,6 +314,9 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 \mysection{Selected Presentations}
 
 \begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+    2022 & Digital RSE: Automatic Code Quality Checks & Princeton RSE group \\
+    2022 & boost-histogram/Hist & PyHEP 2022 Topical \\
+    2022 & CMake best practices & HSF S\&C round table \\
 	2021 & Powerful Python Packaging for Scientific Codes & PyHEP 2021 \\
 	2021 & High-Performance Histogramming for HEP Analysis & PyHEP 2021 \\
 	2021 & Level Up Your Python & PyHEP 2021 \\
@@ -291,20 +331,20 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2020 & Boost-histogram: High-Performance Histograms as Objects & SciPy 2020 \\
     2020 & Boost-Histogram for Analysis Systems (poster) & IRIS-HEP Poster Session \\
     2020 & International efforts on efficient computing & ECHEP \\
-    2020 & Python, Numpy, and Pandas & Princeton RDM 2020 \\
+    2020 & Python, NumPy, and Pandas & Princeton RDM 2020 \\
     2019 & High performance Python: GPUs & PRC Minicourses \\
     2019 & High performance Python: CPUs & PRC Minicourses \\
-    2019 & Recent developments in histogram libraries  & CHEP 2019 \\ 	
-    2019 & Python 3.8: What's new & PyHEP 2019 \\ 	
-    2019 & Python Histogramming packages & PyHEP 2019\\ 	
-    2019 & Modern CMake Workshop & USATLAS Bootcamp \\ 	
-    2019 & A hybrid deep learning approach to vertexing & 3rd IML Workshop \\ 	
-    2019 & A hybrid deep learning approach to vertexing & CtD/WIT 2019 \\ 	
-    2019 & Conda: a complete reproducible ROOT environment in under 5 minutes & HOW 2019 \\ 	
-    2019 & Machine Learning for the Primary Vertex reconstruction & HOW 2019 \\ 	
+    2019 & Recent developments in histogram libraries  & CHEP 2019 \\
+    2019 & Python 3.8: What's new & PyHEP 2019 \\
+    2019 & Python Histogramming packages & PyHEP 2019\\
+    2019 & Modern CMake Workshop & USATLAS Bootcamp \\
+    2019 & A hybrid deep learning approach to vertexing & 3rd IML Workshop \\
+    2019 & A hybrid deep learning approach to vertexing & CtD/WIT 2019 \\
+    2019 & Conda: a complete reproducible ROOT environment in under 5 minutes & HOW 2019 \\
+    2019 & Machine Learning for the Primary Vertex reconstruction & HOW 2019 \\
     2019 & A hybrid deep learning approach to vertexing & ACAT 2019 \\ %  Saas Fee, Switzerland
 	2018 & New approaches to PV reconstruction & LHCb Computing Workshop \\ % Chia, Italy
-	2018 & iMinuit: Interactive Python wrapper around MINUIT2 & ROOT User's Workshop \\  % 
+	2018 & iMinuit: Interactive Python wrapper around MINUIT2 & ROOT User's Workshop \\  %
 	2018 & GooFit 2.2 & CHEP \\ % Sofia, Bulgaria
 	2018 & Invited lecture: Bindings in Python & PyHEP  \\
     2018 & Advancements in GooFit & DIANA/HEP \\
@@ -312,35 +352,35 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 	2017 & GooFit 2.0 & ACAT \\
 	2017 & GPUs in LHCb & DPF \\ % Chicago, IL
 	2017 & GooFit: A case study & PEARC \\
-	
-	
+
+
 	2015 & Measurement Over Large Solid Angle of Low Energy Cosmic Ray Muon Flux &  AGU Fall meeting \\
 	 & (poster) \emph{Outstanding Student Paper Award} & \\
 	 2013 & Lunch Seminar: Computing Environments & UT Austin \\
 	 2009 & Edge Effects in the Use of Wavelets for Partial Image Reconstruction & Pi Mu Epsilon Mathfest \\
 	 & \emph{Outstanding Student Exposition and Research in Applied Mathematics} & \\
-	 
+
 	 2009 & Invited lecture for Alpha Chi induction ceremony & Alpha Chi  \\
-	 
+
 	 2009 & Wavelet Matrix Completion Methods and Their Effects In Image Compression &  \\
 	  & \emph{Amir Moez Award for Best Student Presentation in Mathematics} & Texas AoS \\
 	  & \emph{Abstract award} & \\
-	  
+
 	  2009 & The Controversial Origin of the Dagger Mountain Anticline, Big Bend National Park, Texas &  Texas AoS \\
 	  & \emph{Honorable mention} & \\
-	  
+
 	  %2009 & Three Mathematics ``slow pitch'' seminars over wavelets and cryptology & ASU \\
-	  
+
 	  2009 & Folding on the Flanks of the Southernmost Laramide Uplift, Big Bend Region, Texas & GSA \\
-	  
+
 	  2008 & Dagger Mountain, Big Bend National Park, West Texas Does Not Overlie a Laccolith & GSA \\
-	 
+
 	 2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS--Texas Section \\
 	 & \emph{Student Presentation Award} & \\
-	 
+
 	 2007 & Characterization of near earth objects via orbital perturbations: A numerical study & APS
 	 %http://meetings.aps.org/link/BAPS.2007.TSS07.SPS2.1
-	 
+
 \end{tabularx}
 
 
