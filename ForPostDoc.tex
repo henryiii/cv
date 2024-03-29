@@ -36,6 +36,7 @@
 \social[linkedin]{henryiii}
 \social[github]{henryiii}
 \social[twitter]{henryschreiner3}
+\social[orcid]{0000-0002-7833-783X}
 
 \NewDocumentCommand \mysection {m}{%
     \vspace{-1ex}
@@ -84,8 +85,10 @@
 \end{comment}
 
 \mysection{Classes taught}
-\begin{tabularx}{\textwidth}{p{.65in}X>{\bfseries}r}
-    Fall 2022 & APC 524 / MAE 506 / AST 506: \textit{Software Engineering for Scientific Computing} & Princeton University \\
+\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+    Spring 2023 & Se4Sci: \textit{Software Engineering for Scientific Computing} - Virtual & IRIS-HEP \\
+    Fall 2023 & APC 524/MAE 506/AST 506: \textit{Software Engineering for Scientific Computing} & Princeton University \\
+    Fall 2022 & APC 524/MAE 506/AST 506: \textit{Software Engineering for Scientific Computing} & Princeton University \\
     Fall 2018 & PHYS 5041/6041: \textit{Computational Physics} & University of Cincinnati \\
 \end{tabularx}
 
@@ -101,6 +104,7 @@
 \textbf{2022:}
 \end{minipage}%
 \begin{minipage}[t]{.935\textwidth}
+\textbf{ACAT 2022} \emph{Comparing and improving hybrid deep learning algorithms for identifying and locating primary vertices} \\
 \textbf{SciPy 2022} \emph{Awkward Packaging: building Scikit-HEP} Proceedings of the 21th Python in Science Conference, 115-120 \\
 \end{minipage}
 
@@ -148,7 +152,8 @@
 \mysection{Selected publications - other}
 
 \begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
-2023 & Comparing and improving hybrid deep learning algorithms for identifying and locating primary vertices & CHEP 2023 \\
+2023 & Awkward Just-In-Time (JIT) Compilation: A Developer's Experience & CHEP 2023 \\
+2023 & Advances in developing deep neural networks for finding primary vertices in proton-proton collisions at the LHC & CHEP 2023 \\
 2022 & Second Analysis Ecosystem Workshop Report & CERN \\
 2021 & Software Training in HEP & vCHEP 2021 \\
 2020 & Inexpensive multi-patient respiratory monitoring system for helmet ventilation during COVID-19 pandemic & \href{https://doi.org/10.1101/2020.06.29.20141283}{medRxiv} \\
@@ -168,7 +173,7 @@ for Archaeological and Geophysical Applications & FastTIMES \\
 
 \mysection{Programming skills and experience}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
-Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet\ CUDA \textbullet\ Matlab \textbullet\ Lua \textbullet\ JavaScript
+Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbullet\ C \textbullet\ CUDA \textbullet\ Matlab \textbullet\ Lua \textbullet\ JavaScript
 \end{tabularx}
 
 
@@ -178,23 +183,29 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
 \subsection{Selected projects, owner or maintainer}
 
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}Xr}
-    pypa/build & The build tool for Python packages & Co-maintainer \\
+    pypa/build & The build tool for Python packages (50M dpm) & Maintainer \\
+    pipx & Python application installer (4.4M dpm) & Co-maintainer \\
     cibuildwheel & Builds binary wheels on CI systems & Co-maintainer \\
-    pybind11 & The popular C++11 Python bindings & Co-maintainer \\
+    pyproject-metadata & Tool for PEP 621 backends (2.3M dpm) & Co-maintainer \\
+    validate-pyproject & Validates Python configuration files & Co-maintainer \\
+    pybind11 & The popular C++11 Python bindings (8.8M dpm) & Maintainer \\
+    Nox & Task automation tool (2.2M dpm) & Co-maintainer \\
     Scikit-build & KitWare's CMake adaptor for Python & Admin \\
-    meson-python & The meson adaptor for Python & Maintainer \\
-    pyproject-metadata & Tool for PEP 621 backends & Maintainer \\
-    CMake & KitWare's Python packaging for CMake & Co-maintainer \\
-    Ninja & KitWare's Python packaging for Ninja & Co-maintainer \\
+    Scikit-build-core & Modern CMake build system for Python (1.5M dpm) & Author \\
+    meson-python & The meson adaptor for Python & Co-maintainer \\
+    CMake & KitWare's Python packaging for CMake (7M dpm) & Maintainer \\
+    Ninja & KitWare's Python packaging for Ninja (9M dpm) & Maintainer \\
     Scikit-HEP & A collection of packages for High Energy Physics & Admin \\
     Cookie & A template for new scientific-python projects & Primary author \\
+    repo-review & WebAssembly \& CLI framework for checking repo health & Primary author \\
+    sp-repo-review & Checks for repo-review for scientific-python & Primary author \\
     boost-histogram & Fast and comprehensive histograms & Primary author \\
     hist, uhi & Scikit-HEP packages for advanced histograms & Primary author \\
     uproot-browser & ROOT file graphical browser in the terminal & Primary author \\
 	Particle & Scikit-HEP package presenting a particle database & An author \\
 	DecayLanguage & Scikit-HEP package describing decay chains & An author \\
-    GooFit & A C++ GPU \& OpenMP library for fitting data, with Python bindings & Co-maintainer \\
-	Plumbum & Python shell pipelining, CLI, terminal color, and SSH tools &  Maintainer \\
+    GooFit & A C++ GPU \& OpenMP fitting library with Python bindings & Co-maintainer \\
+    Plumbum & Python shell pipelining, CLI, color, and SSH tools (4.3M dpm) & Maintainer \\
 	CLI11 & A command line parser for C++11 used by the Microsoft Terminal & Primary author \\
 	ROOT & High energy physics C++ toolkit & conda-forge and homebrew \\
 	Numba & Provides Numba on Conda & conda-forge maintainer \\
@@ -202,22 +213,16 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
     jekyll-indico & Ruby plugin for Jekyll to collect Indico talks & Primary author \\
     hypernewsviewer & Replacement for CMS HyperNews & Primary author \\
     check-sdist & Tool for checking Python packaging & Primary author \\
-    repo-review & WebAssembly \& CLI framework for checking repo health & Primary author \\
-    sp-repo-review & Checks for repo-review for scientific-python & Primary author \\
 \end{tabularx}
 
 \subsection{Other contributions}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{1.4in}X}
 	CMake          & OpenMP support for macOS, an occasional CUDA maintainer  \\
-	Clariphy       & From IRIS-HEP \\
 	HighFive       & New concise syntax, bugfixes, std::array support  \\
-	IRIS-HEP website & Publications system, service integration, homepage design, and more \\
 	Intel Parallel STL & Wrote CMake build system and added HomeBrew formula \\
 	Minuit2        & Built standalone and several patches, added Windows support \\
 	Nlohmann::JSON & Wrote version 3.3, adding GCC 4.8 support (previously considered impossible) \\
-	Science-Responds & From IRIS-HEP \\
-    Manylinux & Assisted with CI automation and user experience improvements \\
-    Nox            & Several new features, and better Conda support \\
+    Manylinux      & Assisted with CI automation and user experience improvements \\
     Pyodide        & Multiple checks and fixes, updated most packages, added boost-histogram \\
     Wheel          & Tags tool \& new backend without circular dependencies \\
 \end{tabularx}
@@ -231,22 +236,24 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
 	DevelopKit
 }
 
+
+\begin{taggedblock}{details}
 \subsection{Smaller contributions and bugfixes}
 \textbf{%
 	Awkward Array \textbullet\
-	Eigen  \textbullet\
+	Eigen \textbullet\
 	Fast histogram \textbullet\
 	IPython \textbullet\
 	Jupyter \textbullet\
 	NumPythia \textbullet\
-	Probfit  \textbullet\
+	Probfit \textbullet\
 	ROOT \textbullet\
 	Scikit-build \textbullet\
-	Uproot  \textbullet\
+	Uproot \textbullet\
 	Uproot-methods \textbullet\
 	VexCL \textbullet\
     FmtLib \textbullet\
-    Google Test  \textbullet\
+    Google Test \textbullet\
     LMod \textbullet\
     MPLHEP \textbullet\
     ManyLinux \textbullet\
@@ -254,6 +261,7 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
     Packaging \textbullet\
     Pip \textbullet\
     PipEnv \textbullet\
+    Pixi \textbullet\
     Poetry \textbullet\
     Probfit \textbullet\
     PyJet \textbullet\
@@ -261,9 +269,11 @@ Languages & Python \textbullet\ C++ \textbullet\ Ruby \textbullet\ C \textbullet
     ROOTPy \textbullet\
     Rich \textbullet\
     Ruff \textbullet\
+    Ruff \textbullet\
     Setuptools-scm \textbullet\
     Typeshed
 }
+\end{taggedblock}
 
 
 \mysection{Selected accomplishments}
@@ -353,6 +363,9 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 \mysection{Selected presentations}
 
 \begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+    2024 & Learning Rust with Advent of Code 2023 & Princeton RSE group \\
+    2023 & Projects report & Princeston RSE Peer Network \\
+    2023 & Software Quality Assurance Tooling & PrincetonPy \\
     2023 & Scientific-Python developer summit report & Princeton RSE group \\
     2023 & Awkward Just-In-Time (JIT) Compilation & CHEP 2023 \\
     2023 & Analysis of physics analysis & CHEP 2023 \\
