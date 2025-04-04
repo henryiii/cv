@@ -108,15 +108,13 @@
 \textbf{SciPy 2024} \emph{Scikit-build-core} Proceedings of the 23rd Python in Science Conference, 225--235
 \end{minipage}
 
-\begin{comment}
-This is waiting for publication. Supposed to be Q4 2024.
 \begin{minipage}[t]{.06\textwidth}
 \textbf{2023:}
 \end{minipage}%
 \begin{minipage}[t]{.94\textwidth}
-\textbf{CHEP 2023} \emph{Advances in developing deep neural networks for finding primary vertices in proton-proton collisions at the LHC}
+\textbf{CHEP 2023} \emph{Awkward Just-In-Time (JIT) Compilation: A Developer’s Experience} EPJ Web of Conf., 295 (2024) \\
+\textbf{CHEP 2023} \emph{Advances in developing deep neural networks for finding primary vertices in proton-proton collisions at the LHC} EPJ Web of Conf., 295 (2024)
 \end{minipage}
-\end{comment}
 
 
 \begin{minipage}[t]{.06\textwidth}
@@ -140,7 +138,7 @@ This is waiting for publication. Supposed to be Q4 2024.
 \end{minipage}%
 \begin{minipage}[t]{.94\textwidth}
 \textbf{SciPy 2020} \emph{Boost-histogram: High-Performance Histograms as Objects} Proceedings of the 19th Python in Science Conference, 63--69 \\
-\textbf{CtD 2020}   \emph{An updated hybrid deep learning algorithm for identifying and locating primary vertices} PROC-CTD2020-52 \\
+\textbf{CtD 2020}   \emph{An updated hybrid DL algorithm for identifying and locating primary vertices} PROC-CTD2020-52 \\
 \textbf{CHEP 2019}  \emph{Recent developments in histogram libraries} EPJ Web Conf. 245 (2020) 05014 \\
 \textbf{CHEP 2019}  \emph{The Scikit HEP Project---overview and prospects} EPJ Web Conf. 245 (2020) 06028
 \end{minipage}
@@ -171,8 +169,6 @@ This is waiting for publication. Supposed to be Q4 2024.
 \mysection{Selected publications - other}
 
 \begin{tabularx}{\textwidth}{p{.5in}X>{\bfseries}r}
-2023 & Awkward Just-In-Time (JIT) Compilation: A Developer's Experience & CHEP 2023 \\
-2023 & Advances in developing deep neural networks for finding primary vertices in proton-proton collisions at the LHC & CHEP 2023 \\
 2022 & Second Analysis Ecosystem Workshop Report & CERN \\
 2021 & Software Training in HEP & vCHEP 2021 \\
 2020 & Inexpensive multi-patient respiratory monitoring system for helmet ventilation during COVID-19 pandemic & \href{https://doi.org/10.1101/2020.06.29.20141283}{medRxiv} \\
@@ -207,6 +203,7 @@ Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbul
     cibuildwheel & Builds binary wheels on CI systems & Co-maintainer \\
     pyproject-metadata & Tool for PEP 621 backends (2.3M dpm) & Co-maintainer \\
     validate-pyproject & Validates Python configuration files & Co-maintainer \\
+    dependency-groups & Tool for PEP 735 dependency groups & Co-maintainer \\
     pybind11 & The popular C++11 Python bindings (8.8M dpm) & Maintainer \\
     Nox & Task automation tool (2.2M dpm) & Co-maintainer \\
     Scikit-build & KitWare's CMake adaptor for Python & Admin \\
@@ -228,7 +225,7 @@ Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbul
 	CLI11 & A command line parser for C++11 used by the Microsoft Terminal & Primary author \\
 	ROOT & High energy physics C++ toolkit & conda-forge and homebrew \\
 	Numba & Provides Numba on Conda & conda-forge maintainer \\
-	trampolim & Modern pure Python package system & Co-maintainer \\
+%	trampolim & Modern pure Python package system & Co-maintainer \\
     jekyll-indico & Ruby plugin for Jekyll to collect Indico talks & Primary author \\
     hypernewsviewer & Replacement for CMS HyperNews & Primary author \\
     check-sdist & Tool for checking Python packaging & Primary author \\
@@ -296,6 +293,11 @@ Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbul
 
 
 \mysection{Selected accomplishments}
+
+\textbf{2025:}
+Developing pybind11 3.0 and cibuildwheel 3.0 packages \textbullet\
+Developed a new nox version with many long-requested features \textbullet\
+
 
 \textbf{2024:}
 Added support for Python 3.13 and free-threading dozens of packages \textbullet\
@@ -400,6 +402,8 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 \mysection{Selected presentations}
 
 \begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+    2025 & Building Binary Packages & Princeton RSE group \\
+    2025 & Tools to help you write better code & Princeton Wintersession \\
     2024 & The two flavors of Python 3.13 & PyHEP 2024 \\
     2024 & Modern binary build systems & PyCon 2024 \\
     2024 & Learning Rust with Advent of Code 2023 & Princeton RSE group \\
