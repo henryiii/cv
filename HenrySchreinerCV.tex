@@ -52,7 +52,7 @@
 
 \mysection{Education}
 
-\begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{1.1in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     8/2010--5/2016 & Ph.D. in Experimental High Energy Physics &  University of Texas at Austin \\
     & \multicolumn{2}{l}{Dissertation: \textit{Methods and Simulations of Muon Tomography and Reconstruction}} \\[1ex]
     1/2006--12/2009 & B.S. in Theoretical Physics, \textit{Summa Cum Laude} & Angelo State University \\
@@ -61,7 +61,7 @@
 
 \mysection{Career history}
 
-\begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{1.1in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     4/2026-- & Computational Physicist/Research Software Engineer, Department of Physics & Princeton University \\
     3/2019--3/2026 & Computational Physicist/Research Software Engineer, Research Computing & Princeton University \\
     5/2016--2/2019 & Postdoctoral Fellow &  University of Cincinnati \\
@@ -77,7 +77,7 @@
 \begin{comment}
 \subsection{Other research projects}
 
-\begin{tabularx}{\textwidth}{p{1.1in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{1.1in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2009 & Wavelet methods and their use in imaging and compression &  Angelo State University \\
     2007--2009 & Mapped the Dagger Mountain Anticline in Big Bend, TX & Angelo State University \\
     2007 & Characterization of near earth objects via orbital perturbations & Angelo State University \\
@@ -85,7 +85,7 @@
 \end{comment}
 
 \mysection{Classes and workshops taught}
-\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.8in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     July 2026 & SIMPLE-Py: \textit{Modern Packaging for Language Extensions in Python}---two-day workshop, organizer & SciPy 2026 \\
     Fall 2025 & APC 524/MAE 506/AST 506: \textit{Software Engineering for Scientific Computing} & Princeton University \\
     Fall 2024 & APC 524/MAE 506/AST 506: \textit{Software Engineering for Scientific Computing} & Princeton University \\
@@ -96,7 +96,7 @@
 \end{tabularx}
 
 \mysection{Grants}
-\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.8in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2022--2026 & Elements: Simplifying Compiled Python Packaging in the Sciences (PI) & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=2209877}{NSF \#2209877} \\
     2017 & SI2\@: SSE\@: Extending the Physics Reach of LHCb in Run 3 Using Machine Learning in the Real-Time Data Ingestion and Reduction System & \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1739772}{NSF \#1739772} \\ %
 \end{tabularx}
@@ -177,7 +177,7 @@
 
 \mysection{Selected publications---other}
 
-\begin{tabularx}{\textwidth}{p{.5in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.5in}>{\raggedright\arraybackslash}X>{\bfseries}r}
 2026 & Building an AI-native Research Ecosystem for Experimental Particle Physics: A Community Vision & \href{https://arxiv.org/abs/2602.17582}{arXiv:2602.17582} \\
 2022 & Second Analysis Ecosystem Workshop Report & CERN \\
 2021 & Software Training in HEP & vCHEP 2021 \\
@@ -188,7 +188,7 @@ for Archaeological and Geophysical Applications & FastTIMES \\
 \end{tabularx}
 
 \begin{taggedblock}{details}
-\begin{tabularx}{\textwidth}{p{.8in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.8in}>{\raggedright\arraybackslash}X>{\bfseries}r}
 2013--2015 & PHY102M lab manual rewrite & University of Texas \\
 2013 & Classified project report & University of Texas\\
 2010 & Coauthor for Modern Physics lab manual rewrite & Angelo State University\\
@@ -197,29 +197,119 @@ for Archaeological and Geophysical Applications & FastTIMES \\
 
 
 \mysection{Programming skills and experience}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}X}
-Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbullet\ C \textbullet\ CUDA \textbullet\ Matlab \textbullet\ Lua \textbullet\ JavaScript
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.1in}>{\raggedright\arraybackslash}X}
+Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbullet\ C \textbullet\ CUDA \textbullet\ Matlab \textbullet\ Lua \textbullet\ JavaScript \textbullet\ TypeScript
 \end{tabularx}
 
+
+\mysection{Selected accomplishments}
+
+\textbf{2026:}
+Organized and ran SIMPLE-Py, a two-day packaging workshop held with SciPy 2026, under the NSF Elements award. \textbullet\
+Released scikit-build-core 1.0 and related releases across the scikit-build family. \textbullet\
+PyTorch moved to scikit-build-core. \textbullet\
+Made packaging, the library behind almost all Python packaging tools, 3x faster at reading versions and specifiers \textbullet\
+Released repo-review 1.0, with a rewritten WebApp \textbullet\
+Released cibuildwheel 4.0, boost-histogram 1.7, and Hist 2.10 \textbullet\
+Developed a helper tool for adopting PEP 810 lazy imports.
+
+
+\textbf{2025:}
+Developed pybind11 3.0 and cibuildwheel 3.0 packages \textbullet\
+Developed a new nox version with many long-requested features. \textbullet\
+Joined the pypa/packaging project. \textbullet\
+Released UHI 1.0, adding a histogram serialization spec \textbullet\
+Completed the 2025 Advent of Code in TypeScript.
+
+
+\textbf{2024:}
+Added support for Python 3.13 and free-threading dozens of packages \textbullet\
+Implemented NumPy 2 support in multiple packages \textbullet\
+Implemented PEP 639 in scikit-build-core, pyproject-metadata, and validate-pyproject \textbullet\
+Implemented PEP 735 in nox, validate-pyproject, and cibuildwheel \textbullet\
+Scikit-build-core reached 2.5 million downloads per month \textbullet\
+Solved a multi-year fight between multipart and python-multipart \textbullet\
+check-sdist 1.0 released \textbullet\
+Worked on new versions of many major packages, including nox, pybind11,
+cibuildwheel, build, validate-pyproject, CLI11, scikit-build-core, boost-histogram/hist,
+plumbum, and more \textbullet\
+Started a vote that got dependency-groups accepted into the PyPA \textbullet\
+Joined the nox project.
+
+\textbf{2023:}
+wheel 0.40 released with ``tags'' interface (after 17 months!) \textbullet\
+Setup scientific-python development guide and new package template \textbullet\
+Released repo-review as part of scientific-python \textbullet\
+Continued success with scikit-build-core, including being the recommendation for nanobind \textbullet\
+Moved dozens of packages to Ruff \textbullet\
+Completed the 2023 Advent of Code in Rust \textbullet\
+Implemented support for PEP 723 in pipx \textbullet\
+Developed the INTERSECT packaging curriculum.
+
+\textbf{2022:}
+Multiple talks at PyCon US 2022 \textbullet\
+Two talks and two panels at SciPy 22 \textbullet\
+Released uproot-browser \textbullet\
+Featured as Python Dev of the Week on MouseVsPython \textbullet\
+Compiled boost-histogram in WebAssembly, in the next pyodide release \textbullet\
+Scikit-build-core introduced and used for Awkward 2.0 \textbullet\
+Taught \emph{Level Up Your Python} during Wintersession.
+
+\begin{taggedblock}{details}
+\textbf{2021:}
+Featured on the TalkPython Podcast \#339 \textbullet\
+Awarded Google Open Source Peer Bonus Award \textbullet\
+Joined the PyPA \textbullet\ Rewrote portions of packaging.python.org.\ \textbullet\
+Released boost-histogram 1.x series, UHI, and hist 2.2--2.5\ \textbullet\
+Joined the ROOT project.\ \textbullet\
+Joined the Scikit-build project as an admin \textbullet\
+Built new config mode for cibuildwheel 2.0 \textbullet\
+Mentored three fellowship students.
+
+\textbf{2020:}
+Developed software for COVID-19 flow monitor \textbullet\
+Joined and released pybind11 2.6.x series \textbullet\
+Joined cibuildwheel \textbullet\
+Released cookie and major updates to Developer docs \textbullet\
+Proposed PlottableHistogram Protocol and started UHI \textbullet\
+Released jekyll-indico for Ruby \textbullet\
+CMake tutorial accepted into HSF \textbullet\
+GitHub Actions conversions and Scikit-HEP developer docs \textbullet\
+Successful Google Summer of Code mentor.
+
+\textbf{2019:}
+Co-created Conda-forge: ROOT \textbullet\
+Joined Princeton \textbullet\
+Proposed and started boost-histogram \textbullet\
+Redesigned Scikit-hep.org, started the developer pages \textbullet\
+Took over IRIS-HEP.org development \textbullet\
+Fixed multiple Scikit-HEP legacy packages \textbullet\ Created CMake workshop.
+
+\textbf{2018:} New standalone Minuit2 for ROOT \textbullet\
+New GooFit releases \textbullet\
+Joined Scikit-HEP \textbullet\
+Taught graduate course on computational physics \textbullet\
+Co-developed pv-finder algorithm.
+\end{taggedblock}
 
 \mysection{Open Source contributions}
 
 
 \subsection{Selected projects, owner or maintainer}
 
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}Xr}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}>{\raggedright\arraybackslash}Xr}
     pypa/packaging & The core packaging utilities for Python (2B dpm) & Maintainer \\
     pypa/build & The build tool for Python packages (145M dpm) & Maintainer \\
-    pipx & Python application installer (6.6M dpm) & Co-maintainer \\
-    cibuildwheel & Builds binary wheels on CI systems & Co-maintainer \\
-    pyproject-metadata & Tool for PEP 621 backends (13M dpm) & Co-maintainer \\
-    validate-pyproject & Validates Python configuration files & Co-maintainer \\
-    dependency-groups & Tool for PEP 735 dependency groups & Co-maintainer \\
+    pipx & Python application installer (6.6M dpm) & Maintainer \\
+    cibuildwheel & Builds binary wheels on CI systems & Maintainer \\
+    pyproject-metadata & Tool for PEP 621 backends (13M dpm) & Maintainer \\
+    validate-pyproject & Validates Python configuration files & Maintainer \\
+    dependency-groups & Tool for PEP 735 dependency groups & Maintainer \\
     pybind11 & The popular C++11 Python bindings (27M dpm) & Maintainer \\
-    Nox & Task automation tool (5.8M dpm) & Co-maintainer \\
+    Nox & Task automation tool (5.8M dpm) & Maintainer \\
     Scikit-build & KitWare's CMake adaptor for Python & Admin \\
-    Scikit-build-core & Modern CMake build system for Python (10M dpm) & Author \\
-    meson-python & The meson adaptor for Python & Co-maintainer \\
+    Scikit-build-core & Modern CMake build system for Python (10M dpm) & Primary author \\
+    meson-python & The meson adaptor for Python & Maintainer \\
     CMake & KitWare's Python packaging for CMake (17M dpm) & Maintainer \\
     Ninja & KitWare's Python packaging for Ninja (29M dpm) & Maintainer \\
     Scikit-HEP & A collection of packages for High Energy Physics & Admin \\
@@ -228,29 +318,25 @@ Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbul
     sp-repo-review & Checks for repo-review for scientific-python & Primary author \\
     boost-histogram & Fast and comprehensive histograms & Primary author \\
     hist, uhi & Scikit-HEP packages for advanced histograms & Primary author \\
-    Awkward Array & Scikit-HEP package for ragged arrays (1.2M dpm) & Co-maintainer \\
-    Vector & Scikit-HEP package for vectors and Lorentz vectors & Co-maintainer \\
+    Awkward Array & Scikit-HEP package for ragged arrays (1.2M dpm) & Maintainer \\
+    Vector & Scikit-HEP package for vectors and Lorentz vectors & Maintainer \\
     Plumbum & Python shell pipelining, CLI, color, and SSH tools (5.8M dpm) & Maintainer \\
     CLI11 & A command line parser for C++11 used by the Microsoft Terminal & Primary author \\
     check-sdist & Tool for checking Python packaging & Primary author \\
-\end{tabularx}
-
-\begin{taggedblock}{details}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.2in}Xr}
     uproot-browser & ROOT file graphical browser in the terminal & Primary author \\
     Particle & Scikit-HEP package presenting a particle database & An author \\
     DecayLanguage & Scikit-HEP package describing decay chains & An author \\
-    GooFit & A C++ GPU \& OpenMP fitting library with Python bindings & Co-maintainer \\
+    GooFit & A C++ GPU \& OpenMP fitting library with Python bindings & Maintainer \\
     ROOT & High energy physics C++ toolkit & conda-forge and homebrew \\
     Numba & Provides Numba on Conda & conda-forge maintainer \\
-%   trampolim & Modern pure Python package system & Co-maintainer \\
+%   trampolim & Modern pure Python package system & Maintainer \\
     jekyll-indico & Ruby plugin for Jekyll to collect Indico talks & Primary author \\
     hypernewsviewer & Replacement for CMS HyperNews & Primary author \\
 \end{tabularx}
-\end{taggedblock}
+
 
 \subsection{Other contributions}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.4in}X}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.4in}>{\raggedright\arraybackslash}X}
     CMake          & OpenMP support for macOS, an occasional CUDA maintainer  \\
     HighFive       & New concise syntax, bugfixes, std::array support  \\
     Intel Parallel STL & Wrote CMake build system and added HomeBrew formula \\
@@ -302,99 +388,9 @@ Languages & Python \textbullet\ C++ \textbullet\ Rust \textbullet\ Ruby \textbul
 \end{taggedblock}
 
 
-\mysection{Selected accomplishments}
-
-\textbf{2026:}
-Organized and ran SIMPLE-Py, a two-day packaging workshop held with SciPy 2026, under the NSF Elements award. \textbullet\
-Released scikit-build-core 1.0 and related releases across the scikit-build family. \textbullet\
-PyTorch moved to scikit-build-core. \textbullet\
-Made packaging, the library behind almost all Python packaging tools, 3x faster at reading versions and specifiers \textbullet\
-Released repo-review 1.0, with a rewritten WebApp \textbullet\
-Released cibuildwheel 4.0, boost-histogram 1.7, and Hist 2.10 \textbullet\
-Developed a helper tool for adopting PEP 810 lazy imports.
-
-
-\textbf{2025:}
-Developed pybind11 3.0 and cibuildwheel 3.0 packages \textbullet\
-Developed a new nox version with many long-requested features. \textbullet\
-Joined the pypa/packaging project. \textbullet\
-Released UHI 1.0, adding a histogram serialization spec \textbullet\
-Completed the 2025 Advent of Code in TypeScript.
-
-
-\textbf{2024:}
-Added support for Python 3.13 and free-threading dozens of packages \textbullet\
-Implemented NumPy 2 support in multiple packages \textbullet\
-Implemented PEP 639 in scikit-build-core, pyproject-metadata, and validate-pyproject \textbullet\
-Implemented PEP 735 in nox, validate-pyproject, and cibuildwheel \textbullet\
-Scikit-build-core reached 2.5 million downloads per month \textbullet\
-Solved a multi-year fight between multipart and python-multipart \textbullet\
-check-sdist 1.0 released \textbullet\
-Worked on new versions of many major packages, including nox, pybind11,
-cibuildwheel, build, validate-pyproject, CLI11, scikit-build-core, boost-histogram/hist,
-plumbum, and more \textbullet\
-Started a vote that got dependency-groups accepted into the PyPA \textbullet\
-Joined the nox project.
-
-\textbf{2023:}
-wheel 0.40 released with ``tags'' interface (after 17 months!) \textbullet\
-Setup scientific-python development guide and new package template \textbullet\
-Released repo-review as part of scientific-python \textbullet\
-Continued success with scikit-build-core, including being the recommendation for nanobind \textbullet\
-Moved dozens of packages to Ruff \textbullet\
-Completed the 2023 Advent of Code in Rust \textbullet\
-Implemented support for PEP 723 in pipx \textbullet\
-Developed the INTERSECT packaging curriculum.
-
-\begin{taggedblock}{details}
-\textbf{2022:}
-Multiple talks at PyCon US 2022 \textbullet\
-Two talks and two panels at SciPy 22 \textbullet\
-Released uproot-browser \textbullet\
-Featured as Python Dev of the Week on MouseVsPython \textbullet\
-Compiled boost-histogram in WebAssembly, in the next pyodide release \textbullet\
-Scikit-build-core introduced and used for Awkward 2.0 \textbullet\
-Taught \emph{Level Up Your Python} during Wintersession.
-
-\textbf{2021:}
-Featured on the TalkPython Podcast \#339 \textbullet\
-Awarded Google Open Source Peer Bonus Award \textbullet\
-Joined the PyPA \textbullet\ Rewrote portions of packaging.python.org.\ \textbullet\
-Released boost-histogram 1.x series, UHI, and hist 2.2--2.5\ \textbullet\
-Joined the ROOT project.\ \textbullet\
-Joined the Scikit-build project as an admin \textbullet\
-Built new config mode for cibuildwheel 2.0 \textbullet\
-Mentored three fellowship students.
-
-\textbf{2020:}
-Developed software for COVID-19 flow monitor \textbullet\
-Joined and released pybind11 2.6.x series \textbullet\
-Joined cibuildwheel \textbullet\
-Released cookie and major updates to Developer docs \textbullet\
-Proposed PlottableHistogram Protocol and started UHI \textbullet\
-Released jekyll-indico for Ruby \textbullet\
-CMake tutorial accepted into HSF \textbullet\
-GitHub Actions conversions and Scikit-HEP developer docs \textbullet\
-Successful Google Summer of Code mentor.
-
-\textbf{2019:}
-Co-created Conda-forge: ROOT \textbullet\
-Joined Princeton \textbullet\
-Proposed and started boost-histogram \textbullet\
-Redesigned Scikit-hep.org, started the developer pages \textbullet\
-Took over IRIS-HEP.org development \textbullet\
-Fixed multiple Scikit-HEP legacy packages \textbullet\ Created CMake workshop.
-
-\textbf{2018:} New standalone Minuit2 for ROOT \textbullet\
-New GooFit releases \textbullet\
-Joined Scikit-HEP \textbullet\
-Taught graduate course on computational physics \textbullet\
-Co-developed pv-finder algorithm.
-\end{taggedblock}
-
 \mysection{Other writings}
 
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.6in}X}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.6in}>{\raggedright\arraybackslash}X}
 Level Up Your Python & Designed for PRC tutorial \\
 CMake workshop & Designed for the USATLAS/FIRST-HEP computing bootcamp \\
 CompClass & A full semester over Computational Science in Python \\
@@ -404,7 +400,7 @@ CLI11 Tutorial & Command line parsing made beautiful \\
 \end{tabularx}
 
 \begin{taggedblock}{details}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.6in}X}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.6in}>{\raggedright\arraybackslash}X}
 GitBook Plugin: Term & A powerful terminal formatting plugin and example (used in other GitBooks) \\
 UC ROOT Tutorial & Basic ROOT for HEP \\
 GooFit 2torial & Using GooFit, writing GooFit \\
@@ -414,17 +410,18 @@ PHY102m videos & Video series for the 102m labs at UT \\
 
 \mysection{Selected websites}
 
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}Xr}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}>{\raggedright\arraybackslash}Xr}
 clariphy & Community Laboratory for AI Research at the Intersection with Physics & \url{clariphy.org} \\
 science-responds & The Larger Scientific Community Responds to the COVID-19 Pandemic & \url{science-responds.org} \\
 ISciNumPy & My blog over programming & \url{iscinumpy.dev} \\
 IRIS-HEP & Home of the IRIS-HEP project & \url{iris-hep.org} \\
+Scikit-build & Home of the scikit-build projects and events & \url{scikit-build.org} \\
 Scikit-HEP & Home of the Scikit-HEP project & \url{scikit-hep.org} \\
 Scientific-Python Development Guide & Guide on developing with Python & \url{learn.scientific-python.org} \\
 \end{tabularx}
 
 \begin{taggedblock}{details}
-\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}Xr}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{1.45in}>{\raggedright\arraybackslash}Xr}
 UCHenry & An old site for UC and LHCb specific activities & \url{cern.ch/hschrein}  \\
 MayaMuon & Public facing site for the MayaMuon project & \url{www.hep.utexas.edu/mayamuon} \\
 UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy102m}  \\
@@ -434,7 +431,7 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 
 \mysection{Selected presentations}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2026 & Tools plenaries: scikit-build and cibuildwheel & SciPy 2026 \\
     2026 & AI tools in OSS development & Princeton RSE group \\
     2026 & Tools that help you write better code & Princeton SE Summer School \\
@@ -455,10 +452,6 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2023 & Awkward Just-In-Time (JIT) Compilation & CHEP 2023 \\
     2023 & Analysis of physics analysis & CHEP 2023 \\
     2023 & Dynamic Metadata proposal (packaging summit) & PyCon 23 \\
-\end{tabularx}
-
-\begin{taggedblock}{details}
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
     2022 & Everything you didn't know you needed & CoDaS HEP 2022 \\
     2022 & Analysis Grand Challenge / HEP SP Ecosystem & DANCE/CoDaS 2022 \\
     2022 & Building Binary Extensions & SciPy '22 \\
@@ -471,7 +464,8 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2022 & CMake best practices & HSF S\&C round table \\
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{taggedblock}{details}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2021 & Powerful Python Packaging for Scientific Codes & PyHEP 2021 \\
     2021 & High-Performance Histogramming for HEP Analysis & PyHEP 2021 \\
     2021 & Level Up Your Python & PyHEP 2021 \\
@@ -480,7 +474,7 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2021 & Level Up Your Python & PRC Bootcamp \\
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2020 & High-performance Python: CPUs & PRC Training \\
     2020 & Mixing Python and Compiled Code & PRC Training \\
     2020 & Building a Python library & Princeton RSE group \\
@@ -492,7 +486,7 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2020 & Python, NumPy, and Pandas & Princeton RDM 2020 \\
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2019 & High performance Python: GPUs & PRC Minicourses \\
     2019 & High performance Python: CPUs & PRC Minicourses \\
     2019 & Recent developments in histogram libraries  & CHEP 2019 \\
@@ -506,7 +500,7 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2019 & A hybrid deep learning approach to vertexing & ACAT 2019 \\ %  Saas Fee, Switzerland
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2018 & New approaches to PV reconstruction & LHCb Computing Workshop \\ % Chia, Italy
     2018 & iMinuit: Interactive Python wrapper around MINUIT2 & ROOT User's Workshop \\  %
     2018 & GooFit 2.2 & CHEP \\ % Sofia, Bulgaria
@@ -514,7 +508,7 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
     2018 & Advancements in GooFit & DIANA/HEP \\
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2017 & CLI11 & DIANA/HEP \\
     2017 & GooFit 2.0 & ACAT \\
     2017 & GPUs in LHCb & DPF \\ % Chicago, IL
@@ -522,16 +516,16 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
     2015 & Measurement Over Large Solid Angle of Low Energy Cosmic Ray Muon Flux &  AGU Fall meeting \\
      & (poster) \emph{Outstanding Student Paper Award} & \\
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
      2013 & Lunch Seminar: Computing Environments & UT Austin \\
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
      2009 & Edge Effects in the Use of Wavelets for Partial Image Reconstruction & Pi Mu Epsilon Mathfest \\
      & \emph{Outstanding Student Exposition and Research in Applied Mathematics} & \\
 
@@ -552,13 +546,13 @@ UT PHY102M & Webpage for the intro Physics labs & \url{web2.ph.utexas.edu/~phy10
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
      2008 & Electronic Structure Calculations of NiTi Based Ternary Systems  & APS--Texas Section \\
      & \emph{Student Presentation Award} & \\
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{p{.33in}X>{\bfseries}r}
+\begin{tabularx}{\textwidth}{p{.33in}>{\raggedright\arraybackslash}X>{\bfseries}r}
      2007 & Characterization of near earth objects via orbital perturbations: A numerical study & APS
      %http://meetings.aps.org/link/BAPS.2007.TSS07.SPS2.1
 
