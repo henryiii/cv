@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 LaTeX source for Henry Schreiner's CV. Two standalone documents, each compiled on its own:
 
-- `ForPostDoc.tex` — the main CV (education, career, grants, publications, open source, presentations).
+- `HenrySchreinerCV.tex` — the main CV (education, career, grants, publications, open source, presentations).
 - `PublicationList.tex` — an older, shorter publication/presentation list. It still shows the University of Cincinnati address, so it is not kept up to date with the main CV.
 
 There is no build script and no CI. Content updates are the usual work here.
@@ -16,8 +16,8 @@ There is no build script and no CI. Content updates are the usual work here.
 `.latexmkrc` sets `$pdflatex = 'lualatex'` and PDF mode, so LuaLaTeX is used (needed by `moderncv` with the fonts in use). Both files also carry a `% !TeX program = lualatex` line.
 
 ```sh
-latexmk ForPostDoc.tex      # -> ForPostDoc.pdf
-latexmk -c                  # clean aux files
+latexmk HenrySchreinerCV.tex      # -> HenrySchreinerCV.pdf
+latexmk -c                        # clean aux files
 ```
 
 Lint with `prek -a --quiet`
@@ -26,7 +26,7 @@ PDFs are gitignored; only the sources are committed.
 
 ## Conventions in the source
 
-**Conditional content.** `ForPostDoc.tex` uses the `tagging` package. Tags are switched near the top of the preamble:
+**Conditional content.** `HenrySchreinerCV.tex` uses the `tagging` package. Tags are switched near the top of the preamble:
 
 ```latex
 %\usetag{details}
